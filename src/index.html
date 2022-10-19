@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Estilos css -->
+  <link rel="stylesheet" href="./styles/styles.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/94e5c9ec87.js" crossorigin="anonymous"></script>
+  
+  <title>Reciclarg</title>
+</head>
+
+<body>
+  <!-- Header -->
+  <!-- Muestra el logo de la ONG, un campo de búsuqeda, un botón para suscribirse al newslettter y la barra de navegación -->
+  <header class="header">
+    <div class="header-container">
+      <!--  Bloque contenedor del área de búsqueda-->
+      <div class="search-container">
+        <form action="">
+          <input type="text" class="search-container__search" placeholder="Buscar..." required>
+          <button class="search-container__btn btn">
+            <i class="fa-solid fa-magnifying-glass search-container__icon"></i>
+          </button>
+        </form>
+      </div>
+      <!-- Bloque contenedor del título principal (logo, título oculto) -->
+      <div class="title-container">
+        <h1 class="title-container__main-title">Reciclarg</h1>
+        <a class="title-container__link-main-page" href="./index.html">
+          <img class="title-container__img" src="./img/logo.png" alt="Reciclarg">
+        </a>
+      </div>
+      <!-- Bloque contenedor de botón de suscripción -->
+      <div class="subscribe-container">
+        <button class="subscribe-container__btn btn">Suscribete</button>
+      </div>
+    </div>
+    <!-- Barra de navegación -->
+    <nav class="navbar">
+      <ul class="navbar__menu">
+        <li class="navbar__menu-element">
+          <a class="navbar__menu-item" href="./pages/comunidad.html" target="_blank">Comunidad</a>
+        </li>
+        <li class="navbar__menu-element">
+          <a class="navbar__menu-item" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
+        </li>
+        <li class="navbar__menu-element">
+          <a class="navbar__menu-item" href="./pages/donaciones.html" target="_blank">Donaciones</a>
+        </li>
+        <li class="navbar__menu-element">
+          <a class="navbar__menu-item" href="./pages/contacto.html" target="_blank">Contacto</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+  <!-- En el main se muestran una imágen y las últimas noticias en materia de medioambiente -->
+  <main>
+    <div class="media-container">
+      <!-- <img class="media-container__img" src="./img/ley-humedales.jpg" alt="Ley de humedales ya!"> -->
+      <iframe class="media-container__video" src="https://www.youtube.com/embed/iO9sbUXXNLo" title="YouTube video player"
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
+    </div>
+    <!-- Bloque | Sección dedicada a mostrar datos -> Últimas noticias -->
+    <section class="data-section">
+      <div class="data-section__title-container">
+        <h2 class="data-section__headline">Últimas noticias</h2>
+        <a class="data-section__ver-mas btn" href="#">Ver más</a>
+      </div>
+      <div class="data-container">
+        <!-- Bloque | Artículo dedicado a mostrar una noticia -->
+        <article class="article">
+          <a href="#" class="article__post-media">
+            <div class="article__img-post">
+              <img class="article__img" src="./img/noticias/news.jpg" alt="Aquí se muestra una imágen">
+            </div>
+          </a>
+          <div class="article__post-container">
+            <h3 class="article__post-title">Título</h3>
+            <p class="article__p">
+              Breve resúmen: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <a href="#" class="article__post-media">
+            <div class="article__img-post">
+              <img class="article__img" src="./img/noticias/news.jpg" alt="Aquí se muestra una imágen">
+            </div>
+          </a>
+          <div class="article__post-container">
+            <h3 class="article__post-title">Título</h3>
+            <p class="article__p">
+              Breve resúmen: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <a href="#" class="article__post-media">
+            <div class="article__img-post">
+              <img class="article__img" src="./img/noticias/news.jpg" alt="Aquí se muestra una imágen">
+            </div>
+          </a>
+          <div class="article__post-container">
+            <h3 class="article__post-title">Título</h3>
+            <p class="article__p">
+              Breve resúmen: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+            </p>
+          </div>
+        </article>
+        <article class="article">
+          <a href="#" class="article__post-media">
+            <div class="article__img-post">
+              <img class="article__img" src="./img/noticias/news.jpg" alt="Aquí se muestra una imágen">
+            </div>
+          </a>
+          <div class="article__post-container">
+            <h3 class="article__post-title">Título</h3>
+            <p class="article__p">
+              Breve resúmen: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+  </main>
+  <!-- El footer mostrará el menú de navegación, las redes sociales de la ONG, una opción para suscribirse al newsletter y una lista de reproducción en Spotify creada por la comunidad de dicha organización-->
+  <footer class="footer">
+    <div class="nav-menu">
+      <div class="footer__title-container">
+        <h2 class="footer__title">Reciclarg</h2>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__list">
+          <li class="footer__item">
+            <a class="footer__link" href="./pages/comunidad.html" target="_blank">
+              <i class="fa-solid fa-people-group"></i>
+              <span class="footer__span">Comunidad</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="./pages/talleres-cursos.html" target="_blank">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <span class="footer__span">Talleres y cursos</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="./pages/donaciones.html" target="_blank">
+              <i class="fa-solid fa-hand-holding-dollar"></i>
+              <span class="footer__span">Donaciones</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="./pages/contacto.html" target="_blank">
+              <i class="fa-solid fa-address-card"></i>
+              <span class="footer__span">Contacto</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__social">
+      <div class="footer__title-container">
+        <h2 class="footer__title">Seguinos en</h2>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__ul">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-brands fa-facebook"></i>
+              <span class="footer__span">Facebook</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-brands fa-twitter"></i>
+              <span class="footer__span">Twitter</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-brands fa-instagram"></i>
+              <span class="footer__span">Instagam</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-brands fa-youtube"></i>
+              <span class="footer__span">Youtube</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__podcast">
+      <div class="footer__title-container">
+        <h2 class="footer__title">Nuestro podcast</h2>
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__ul">
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-brands fa-spotify"></i>
+              <span class="footer__span">Spotify</span>
+            </a>
+          </li>
+          <li class="footer__item">
+            <a class="footer__link" href="#">
+              <i class="fa-solid fa-podcast"></i>
+              <span class="footer__span">Apple podcast</span>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer__sub">
+      <div class="footer__title-container">
+        <h2 class="footer__title">Suscribite a nuestro newsletter</h2>
+      </div>
+      <div>        
+        <form action="">
+          <input class="footer__input" type="email" placeholder="Email" required>
+          <input class="footer__btn btn" type="submit" value="Suscribite"></input>
+        </form>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
