@@ -21,42 +21,42 @@
   <!-- Header -->
   <!-- Muestra el logo de la ONG, un campo de búsuqeda, un botón para suscribirse al newslettter y la barra de navegación -->
   <header class="header">
-    <div class="header-container">
+    <div class="header__container">
       <!--  Bloque contenedor del área de búsqueda-->
       <div class="search-container">
         <form action="">
           <input type="text" class="search-container__search" placeholder="Buscar..." required>
-          <button class="search-container__btn btn">
+          <a class="search-container__btn btn">
             <i class="fa-solid fa-magnifying-glass search-container__icon"></i>
-          </button>
+          </a>
         </form>
       </div>
       <!-- Bloque contenedor del título principal (logo, título oculto) -->
       <div class="title-container">
         <h1 class="title-container__main-title">Reciclarg</h1>
-        <a class="title-container__link-main-page" href="../index.html">
-          <img class="title-container__img" src="../img/logo.png" alt="Reciclarg">
+        <a class="title-container__link-main-page" href="./index.html">
+          <img class="title-container__img" src="./img/logo.png" alt="Reciclarg">
         </a>
       </div>
       <!-- Bloque contenedor de botón de suscripción -->
-      <div class="subscribe-container">
-        <button class="subscribe-container__btn btn">Suscribete</button>
+      <div class="header__sub-container">
+        <a class="header__sub-btn btn">Suscribete</a>
       </div>
     </div>
     <!-- Barra de navegación -->
     <nav class="navbar">
       <ul class="navbar__menu">
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./comunidad.html">Comunidad</a>
+          <a class="navbar__menu-item" href="./pages/comunidad.html" target="_blank">Comunidad</a>
         </li>
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./talleres-cursos.html">Talleres y cursos</a>
+          <a class="navbar__menu-item" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
         </li>
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./donaciones.html">Donaciones</a>
+          <a class="navbar__menu-item" href="./pages/donaciones.html" target="_blank">Donaciones</a>
         </li>
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./contacto.html">Contacto</a>
+          <a class="navbar__menu-item" href="./pages/contacto.html" target="_blank">Contacto</a>
         </li>
       </ul>
     </nav>
@@ -258,104 +258,106 @@
   </main>
   <!-- El footer mostrará el menú de navegación, las redes sociales de la ONG, una opción para suscribirse al newsletter y una lista de reproducción en Spotify creada por la comunidad de dicha organización-->
   <footer class="footer">
-    <div class="nav-menu">
-      <div class="footer__title-container">
-        <h2 class="footer__title">Reciclarg</h2>
+    <section class="footer__container">
+      <div class="nav-menu">
+        <div class="footer__title-container">
+          <h2 class="footer__title">Reciclarg</h2>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__list">
+            <li class="footer__item">
+              <a class="footer__link" href="./pages/comunidad.html" target="_blank">
+                <i class="fa-solid fa-people-group"></i>
+                <span class="footer__span">Comunidad</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./pages/talleres-cursos.html" target="_blank">
+                <i class="fa-solid fa-graduation-cap"></i>
+                <span class="footer__span">Talleres y cursos</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./pages/donaciones.html" target="_blank">
+                <i class="fa-solid fa-hand-holding-dollar"></i>
+                <span class="footer__span">Donaciones</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="./pages/contacto.html" target="_blank">
+                <i class="fa-solid fa-address-card"></i>
+                <span class="footer__span">Contacto</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__menu">
-        <ul class="footer__list">
-          <li class="footer__item">
-            <a class="footer__link" href="./comunidad.html">
-              <i class="fa-solid fa-people-group"></i>
-              <span class="footer__span">Comunidad</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="./talleres-cursos.html">
-              <i class="fa-solid fa-graduation-cap"></i>
-              <span class="footer__span">Talleres y cursos</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="./donaciones.html">
-              <i class="fa-solid fa-hand-holding-dollar"></i>
-              <span class="footer__span">Donaciones</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="./contacto.html">
-              <i class="fa-solid fa-address-card"></i>
-              <span class="footer__span">Contacto</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__social">
+        <div class="footer__title-container">
+          <h2 class="footer__title">Seguinos en</h2>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                <i class="fa-brands fa-facebook"></i>
+                <span class="footer__span">Facebook</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                <i class="fa-brands fa-twitter"></i>
+                <span class="footer__span">Twitter</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                <i class="fa-brands fa-instagram"></i>
+                <span class="footer__span">Instagam</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                <i class="fa-brands fa-youtube"></i>
+                <span class="footer__span">Youtube</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-    </div>
-    <div class="footer__social">
-      <div class="footer__title-container">
-        <h2 class="footer__title">Seguinos en</h2>
+      <div class="footer__podcast">
+        <div class="footer__title-container">
+          <h2 class="footer__title">Podcast</h2>
+        </div>
+        <div class="footer__menu">
+          <ul class="footer__ul">
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                <i class="fa-brands fa-spotify"></i>
+                <span class="footer__span">Spotify</span>
+              </a>
+            </li>
+            <li class="footer__item">
+              <a class="footer__link" href="#">
+                <i class="fa-solid fa-podcast"></i>
+                <span class="footer__span">Apple podcast</span>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-      <div class="footer__menu">
-        <ul class="footer__ul">
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-brands fa-facebook"></i>
-              <span class="footer__span">Facebook</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-brands fa-twitter"></i>
-              <span class="footer__span">Twitter</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-brands fa-instagram"></i>
-              <span class="footer__span">Instagam</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-brands fa-youtube"></i>
-              <span class="footer__span">Youtube</span>
-            </a>
-          </li>
-        </ul>
+      <div class="footer__sub">
+        <div class="footer__title-container">
+          <h2 class="footer__title">Newsletter</h2>
+        </div>
+        <div>
+          <form class="footer_form-sub" action="">
+            <input class="footer__input" type="email" placeholder="Email" required>
+            <input class="footer__btn btn" type="submit" value="Suscribite"></input>
+          </form>
+        </div>
       </div>
-    </div>
-    <div class="footer__podcast">
-      <div class="footer__title-container">
-        <h2 class="footer__title">Nuestro podcast</h2>
-      </div>
-      <div class="footer__menu">
-        <ul class="footer__ul">
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-brands fa-spotify"></i>
-              <span class="footer__span">Spotify</span>
-            </a>
-          </li>
-          <li class="footer__item">
-            <a class="footer__link" href="#">
-              <i class="fa-solid fa-podcast"></i>
-              <span class="footer__span">Apple podcast</span>
-            </a>
-          </li>
-        </ul>
-      </div>
-    </div>
-    <div class="footer__sub">
-      <div class="footer__title-container">
-        <h2 class="footer__title">Suscribite a nuestro newsletter</h2>
-      </div>
-      <div>
-        <form action="">
-          <input class="footer__input" type="email" placeholder="Email" required>
-          <input class="footer__btn btn" type="submit" value="Suscribite"></input>
-        </form>        
-      </div>
-    </div>
+    </section>
   </footer>
 </body>
 </html>
