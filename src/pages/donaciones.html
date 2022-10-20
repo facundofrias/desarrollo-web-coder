@@ -35,7 +35,7 @@
       <div class="title-container">
         <h1 class="title-container__main-title">Reciclarg</h1>
         <a class="title-container__link-main-page" href="./index.html">
-          <img class="title-container__img" src="./img/logo.png" alt="Reciclarg">
+          <img class="title-container__img" src="../img/logo.png" alt="Reciclarg">
         </a>
       </div>
       <!-- Bloque contenedor de botón de suscripción -->
@@ -47,132 +47,138 @@
     <nav class="navbar">
       <ul class="navbar__menu">
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/comunidad.html" target="_blank">Comunidad</a>
+          <a class="navbar__menu-item" href="./comunidad.html">Comunidad</a>
         </li>
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
+          <a class="navbar__menu-item" href="./talleres-cursos.html">Talleres y cursos</a>
         </li>
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/donaciones.html" target="_blank">Donaciones</a>
+          <a class="navbar__menu-item" href="./donaciones.html">Donaciones</a>
         </li>
         <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/contacto.html" target="_blank">Contacto</a>
+          <a class="navbar__menu-item" href="./contacto.html">Contacto</a>
         </li>
       </ul>
     </nav>
   </header>
   <!-- En el main se muestran una imágen y las últimas noticias en materia de medioambiente -->
   <main class="main">
-    <div class="main__title-text-container">
-      <h2 class="main__title">Donaciones</h2>
-      <p class="main__description">
-        Desde 2018 trabajamos para hacer de este planeta un lugar ecológicamente más habitable. Actualmente somos 28 personas que, voluntariamente, llevamos a cabo diversas actividades vinculadas con el cuidado del medioambiente.
-        Lo hacemos mediante charlas de concientización en escuelas y universidades relacionadas con el uso y consumo responsable de recursos y servicios (agua, energia, combustible, etc) y el tratado de residuos.
-        Realizamos cursos presenciales en distintas localidades del país, relacionadas energía sustentable (instalación de paneles y tanques de agua solares). Por otro lado, ofrecemos capacitaciones virtuales vinculadas con el armado de composteras, diseño e implementación de huertas hogareñas, etc.
-        <br>
-        Tu aporte nos ayuda y motiva a seguir trabajando en pos de un mundo sustentable y libre de ecocidio.
-      </p>
-    </div>
-    <div class="form">
-      <form action="">
-        <!-- Montos -->
-        <div class="form__data-container">
-          <div class="form__amount-question">
-            <h3 class="form__title-donation"> ¿CUÁNTO QUERÉS DONAR?</h3>
-            <span class="form__span-amount">Los montos están expresados en Pesos Argentinos (ARS $)</span>
-          </div>
-          <ul class="form__amounts">
-            <li class="form_amount-btn btn">$5.000,00</li>
-            <li class="form_amount-btn btn">$2.000,00</li>
-            <li class="form_amount-btn btn">$1.500,00</li>
-            <li class="form_amount-btn btn">$1.000,00</li>
-            <li class="form_amount-btn btn">$500,00</li>
-            <li class="form_amount-btn btn">Otro monto</li>
-          </ul>
-          <div class="form__frequency">
-            <h3 class="form__title-donation">¿CON QUÉ FRECUENCIA QUERÉS DONAR? </h3>
-            <input class="form__input-radio" type="radio" id="mensual" name="frecuencia">
-            <label class="form__label-radio" for="mensual">Mensual</label>
-            <input class="form__input-radio" type="radio" id="unica-vez" name="frecuencia">
-            <label class="form__label-radio" for="unica-vez">Única vez</label>
-          </div>
-        </div>
-        <!-- Datos personales -->
-        <div class="form__data-container">
-          <h3 class="form__title-donation">DATOS PERSONALES</h3>
-          <div class="form__input-rows">
-            <div class="form__input-columns">
-              <label for="nombre">Nombre/s</label><br>
-              <input class="form__input" type="text" class="form__firstname"  id="nombre" required>
+    <div class="main__container">
+      <div class="main__title-text-container">
+        <h2 class="main__title">Donaciones</h2>
+        <p class="main__description">
+          Desde 2018 trabajamos para hacer de este planeta un lugar ecológicamente más habitable. Actualmente somos 28 personas que, voluntariamente, llevamos a cabo diversas actividades vinculadas con el cuidado del medioambiente.
+          Lo hacemos mediante charlas de concientización en escuelas y universidades relacionadas con el uso y consumo responsable de recursos y servicios (agua, energia, combustible, etc) y el tratado de residuos.
+          Realizamos cursos presenciales en distintas localidades del país, relacionadas energía sustentable (instalación de paneles y tanques de agua solares). Por otro lado, ofrecemos capacitaciones virtuales vinculadas con el armado de composteras, diseño e implementación de huertas hogareñas, etc.
+          <br>
+          Tu aporte nos ayuda y motiva a seguir trabajando en pos de un mundo sustentable y libre de ecocidio.
+        </p>
+      </div>
+      <div class="form">
+        <form action="">
+          <!-- Montos -->
+          <div class="form__data-container">
+            <div class="form__amount-question">
+              <h3 class="form__title-donation"> ¿CUÁNTO QUERÉS DONAR?</h3>
+              <span class="form__span-amount">Los montos están expresados en Pesos Argentinos (ARS $)</span>
             </div>
-            <div class="form__input-columns">
-              <label for="apellido">Apellido/s</label><br>
-              <input class="form__input" type="text" class="form__surname" id="apellido" required>
-            </div>
-            <div class="form__input-columns"> 
-              <label for="email">Email</label><br>
-              <input class="form__input" type="email" class="form__email" id="email" required>
+            <ul class="form__amounts">
+              <li class="form_amount-btn btn">$5.000,00</li>
+              <li class="form_amount-btn btn">$2.000,00</li>
+              <li class="form_amount-btn btn">$1.500,00</li>
+              <li class="form_amount-btn btn">$1.000,00</li>
+              <li class="form_amount-btn btn">$500,00</li>
+              <li class="form_amount-btn btn">Otro monto</li>
+            </ul>
+            <div class="form__frequency">
+              <h3 class="form__title-donation">¿CON QUÉ FRECUENCIA QUERÉS DONAR? </h3>
+              <input class="form__input-radio" type="radio" id="mensual" name="frecuencia">
+              <label class="form__label-radio" for="mensual">Mensual</label>
+              <input class="form__input-radio" type="radio" id="unica-vez" name="frecuencia">
+              <label class="form__label-radio" for="unica-vez">Única vez</label>
             </div>
           </div>
-          <div class="form__input-rows">
-            <div class="form__input-columns">
-              <label for="ciudad">Ciudad</label><br>
-              <input class="form__input form__input-medium" type="text" class="form__city" id="ciudad" required>
-            </div>
-            <div class="form__input-columns">
-              <label for="provincia">Provincia</label><br>
-              <input class="form__input form__input-medium" type="text" class="form__province" required>
-            </div>
-            <div class="form__input-columns">
-              <label for="pais">País</label><br>
-              <input class="form__input form__input-medium" type="text" class="form__country" required>
-            </div>
-            <div class="form__input-columns">
-              <label for="telefono">Teléfono (sin "0" ni "15")</label><br>
-              <input class="form__input form__input-medium" type="number" id="telefono" required>
-            </div>
-          </div>
-        </div>
-        <!-- Datos de la tarjeta --> 
-        <div class="form__data-container">
-          <h3 class="form__title-donation">¿DE DÓNDE QUERÉS QUE SE DEBIDE LA DONACIÓN?</h3>
-          <div class="form__owner-data">
+          <!-- Datos personales -->
+          <div class="form__data-container">
+            <h3 class="form__title-donation">DATOS PERSONALES</h3>
             <div class="form__input-rows">
               <div class="form__input-columns">
-                <label for="nombre-duenio-tarjeta">Nombre que figura en la tarjeta</label><br>
-                <input class="form__input " type="text" id="nombre-duenio-tarjeta" required>
+                <label for="nombre">Nombre/s</label><br>
+                <input class="form__input" type="text" class="form__firstname"  id="nombre" required>
               </div>
               <div class="form__input-columns">
-                <label for="numero-tarjeta">Número de la tarjeta</label><br>
-                <input class="form__input" type="number" id="numero-tarjeta"  required>
+                <label for="apellido">Apellido/s</label><br>
+                <input class="form__input" type="text" class="form__surname" id="apellido" required>
               </div>
-              <div class="form__input-columns">
-                <label for="expira">Fecha de expiración</label><br>
-                <input class="form__input form__input-medium" type="month" id="expira"  required>
-              </div>
-              <div class="form__input-colums">
-                <label for="cvv">Código de seguridad</label><br>
-                <input class="form__input form__input-tiny" type="number" id="cvv"  required>
+              <div class="form__input-columns"> 
+                <label for="email">Email</label><br>
+                <input class="form__input" type="email" class="form__email" id="email" required>
               </div>
             </div>
             <div class="form__input-rows">
               <div class="form__input-columns">
-                <label for="tipo-documento">Tipo de documento</label><br>
-                <select class="form__input-small" id="tipo-documento">
-                  <option value="dni" selected>DNI</option>
-                  <option value="lc">L.C.</option>
-                  <option value="cuil">CUIL</option>
-                  <option value="cuit">CUIT</option>
-                  <option value="otro">Otro</option>
-                </select>
+                <label for="ciudad">Ciudad</label><br>
+                <input class="form__input form__input-medium" type="text" class="form__city" id="ciudad" required>
+              </div>
+              <div class="form__input-columns">
+                <label for="provincia">Provincia</label><br>
+                <input class="form__input form__input-medium" type="text" class="form__province" required>
+              </div>
+              <div class="form__input-columns">
+                <label for="pais">País</label><br>
+                <input class="form__input form__input-medium" type="text" class="form__country" required>
+              </div>
+              <div class="form__input-columns">
+                <label for="telefono">Teléfono (sin "0" ni "15")</label><br>
+                <input class="form__input form__input-medium" type="number" id="telefono" required>
               </div>
             </div>
           </div>
-        </div>
-        <div class="form__donate-btn-container">
-          <input class="form__donate-btn btn" type="submit" value="DONAR">
-        </div>
-      </form>
+          <!-- Datos de la tarjeta --> 
+          <div class="form__data-container">
+            <h3 class="form__title-donation">¿DE DÓNDE QUERÉS QUE SE DEBIDE LA DONACIÓN?</h3>
+            <div class="form__owner-data">
+              <div class="form__input-rows">
+                <div class="form__input-columns">
+                  <label for="nombre-duenio-tarjeta">Nombre que figura en la tarjeta</label><br>
+                  <input class="form__input " type="text" id="nombre-duenio-tarjeta" required>
+                </div>
+                <div class="form__input-columns">
+                  <label for="numero-tarjeta">Número de la tarjeta</label><br>
+                  <input class="form__input" type="number" id="numero-tarjeta"  required>
+                </div>
+                <div class="form__input-columns">
+                  <label for="expira">Fecha de expiración</label><br>
+                  <input class="form__input form__input-medium" type="month" id="expira"  required>
+                </div>
+                <div class="form__input-columns">
+                  <label for="cvv">Código de seguridad</label><br>
+                  <input class="form__input form__input-tiny" type="number" id="cvv"  required>
+                </div>
+              </div>
+              <div class="form__input-rows">
+                <div class="form__input-columns">
+                  <label for="tipo-documento">Tipo de documento</label><br>
+                  <select class="form__input form__input-small" id="tipo-documento">
+                    <option value="dni" selected>DNI</option>
+                    <option value="lc">L.C.</option>
+                    <option value="cuil">CUIL</option>
+                    <option value="cuit">CUIT</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="form__input-columns">
+                  <label for="dni">DNI</label><br>
+                  <input class="form__input form__input-small" type="number" id="dni"  required>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="form__donate-btn-container">
+            <input class="form__donate-btn btn" type="submit" value="DONAR">
+          </div>
+        </form>
+      </div>
     </div>
   </main>
   <!-- El footer mostrará el menú de navegación, las redes sociales de la ONG, una opción para suscribirse al newsletter y una lista de reproducción en Spotify creada por la comunidad de dicha organización-->
@@ -185,25 +191,25 @@
         <div class="footer__menu">
           <ul class="footer__list">
             <li class="footer__item">
-              <a class="footer__link" href="./pages/comunidad.html" target="_blank">
+              <a class="footer__link" href="./comunidad.html">
                 <i class="fa-solid fa-people-group"></i>
                 <span class="footer__span">Comunidad</span>
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="./pages/talleres-cursos.html" target="_blank">
+              <a class="footer__link" href="./talleres-cursos.html">
                 <i class="fa-solid fa-graduation-cap"></i>
                 <span class="footer__span">Talleres y cursos</span>
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="./pages/donaciones.html" target="_blank">
+              <a class="footer__link" href="./donaciones.html">
                 <i class="fa-solid fa-hand-holding-dollar"></i>
                 <span class="footer__span">Donaciones</span>
               </a>
             </li>
             <li class="footer__item">
-              <a class="footer__link" href="./pages/contacto.html" target="_blank">
+              <a class="footer__link" href="./contacto.html">
                 <i class="fa-solid fa-address-card"></i>
                 <span class="footer__span">Contacto</span>
               </a>

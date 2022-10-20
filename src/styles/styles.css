@@ -331,16 +331,17 @@ main {
 
 .form__input-rows {
   padding: 15px 0;
-  display: flex;
-  justify-content: start;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(14rem, 1fr));
 }
 
 .form__input-columns {
-  padding: 0 20px 0 0;
+  padding: 4px 20px 4px 0;
 }
 
 .form__amount-question {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
 }
 
@@ -350,16 +351,23 @@ main {
 }
 
 .form__span-amount {
-  font-size: 10vw;
+  font-size: 1rem;
 }
 
 .form__amounts {
-  display: flex;
+  margin-bottom: 10px;
+  display: grid;
   justify-content: space-between;
+  grid-template-columns: 1fr;
+  justify-items: center;
+  gap: 7px;
 }
 
 .form_amount-btn {
+  width: 8rem;
+  height: 2.5rem;
   font-size: 1.7rem;
+  line-height: 2.5rem;
 }
 
 .form__label-radio {
@@ -369,8 +377,8 @@ main {
 .form__input {
   border: 1px solid gray;
   border-radius: 3px;
-  width: 7rem;
-  height: 1.2rem;
+  width: 10rem;
+  height: 1.4rem;
 }
 
 .form__input-medium {
@@ -442,6 +450,11 @@ input {
   .navbar__menu-item {
     font-size: 1.2rem;
   }
+
+  /* --- donaciones.html --- */
+  .form__amounts {
+  grid-template-columns: repeat(2, 1fr);
+  }
 }
 
 @media (min-width: 576px) {
@@ -467,6 +480,11 @@ input {
 
   .footer__container {
     grid-template-columns: repeat(4, 1fr);
+  }
+
+  /* donaciones.html */
+  .form__amount-question {
+    flex-direction: row;
   }
 }
 
@@ -495,6 +513,13 @@ input {
   .data-container {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  
+  /* --- donaciones.html --- */
+  
+  .form__amounts {
+    grid-template-columns: repeat(6, 1fr);
+    }
 }
 
 @media (min-width: 1200px) {
