@@ -483,6 +483,11 @@ input {
   }
 
   /* donaciones.html */
+
+  .form__amounts {
+    grid-template-columns: repeat(3, 1fr);
+    }
+    
   .form__amount-question {
     flex-direction: row;
   }
