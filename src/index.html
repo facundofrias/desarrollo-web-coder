@@ -5,7 +5,9 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
   <!-- Estilos css -->
+  <link rel="stylesheet" href="./styles/bootstrap.min.css">
   <link rel="stylesheet" href="./styles/styles.css">
 
   <!-- Fuentes -->
@@ -23,47 +25,47 @@
 <body>
   <!-- Header -->
   <!-- Muestra el logo de la ONG, un campo de búsuqeda, un botón para suscribirse al newslettter y la barra de navegación -->
-  <header class="header">
-    <div class="header__container">
-      <!--  Bloque contenedor del área de búsqueda-->
-      <div class="search-container">
-        <form action="">
-          <input type="text" class="search-container__search" placeholder="Buscar..." required>
-          <a class="search-container__btn btn">
-            <i class="fa-solid fa-magnifying-glass search-container__icon"></i>
-          </a>
-        </form>
-      </div>
-      <!-- Bloque contenedor del título principal (logo, título oculto) -->
-      <div class="title-container">
+  
+    <!-- Barra navegación Bootstrap -->
+    <header class="header navbar navbar-expand-md">
+      <div class="container-fluid">
         <h1 class="title-container__main-title">Reciclarg</h1>
-        <a class="title-container__link-main-page" href="./index.html">
-          <img class="title-container__img" src="./img/logo.png" alt="Reciclarg">
+        <a class="header__main-page" href="./index.html">
+          <img class="header__logo-img" src="./img/logo.png" alt="Reciclarg">
         </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span>
+            <i class="header__togller fa-solid fa-bars"></i>
+          </span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end gap-2" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/comunidad.html" target="_blank">Comunidad</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/donaciones.html" target="_blank">Donaciones</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./pages/contacto.html" target="_blank">Contacto</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input class="form-control header__search-input" type="search" placeholder="Buscar" aria-label="Search">
+            <button class="header__search-btn btn btn-outline-success" type="submit">
+              <i class="fa-solid fa-magnifying-glass search-container__icon"></i>
+            </button>
+          </form>
+          <!-- Bloque contenedor de botón de suscripción -->
+          <div class="header__sub-container">
+            <a class="header__sub-btn btn">Suscribete</a>
+          </div>
+        </div>
       </div>
-      <!-- Bloque contenedor de botón de suscripción -->
-      <div class="header__sub-container">
-        <a class="header__sub-btn btn">Suscribete</a>
-      </div>
-    </div>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/comunidad.html" target="_blank">Comunidad</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/donaciones.html" target="_blank">Donaciones</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/contacto.html" target="_blank">Contacto</a>
-        </li>
-      </ul>
-    </nav>
-  </header>
+    </header>
   <!-- En el main se muestran una imágen y las últimas noticias en materia de medioambiente -->
   <main>
     <div class="main__container">
@@ -244,6 +246,10 @@
       </div>
     </section>
   </footer>
+
+  
+  <!-- Script Bootstrap -->
+  <script src="./js/bootstrap.bundle.min.js"></script>
 </body>
 
 </html>
