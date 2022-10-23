@@ -218,11 +218,15 @@ main {
 
 .footer__item {
   padding: 2px;
-  font-size: 1.2rem;
 }
 
 .footer__span {
   margin: 0 2px;
+}
+
+.footer__link span,
+.footer__link i {
+  font-size: 1.14rem;
 }
 
 .footer__link:hover {
@@ -266,13 +270,16 @@ main {
 
 /* /donaciones.html */
 
+.separador {
+  background-color: crimson;
+}
 
 .form__data-container {
   padding: 10px 0;
   border-bottom: 2px solid var(--verde-musgo);
 }
 
-.form__input-rows {
+/*.form__input-rows {
   padding: 15px 0;
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(14em, 1fr));
@@ -282,11 +289,11 @@ main {
   padding: 4px 20px 4px 0;
 }
 
-.form__amount-question {
+ .form__amount-question {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-}
+} */
 
 .form__title-donation,
 .form__span-amount {
@@ -297,20 +304,20 @@ main {
   font-size: 1em;
 }
 
-.form__amounts {
+/* .form__amounts {
   margin-bottom: 10px;
   display: grid;
   justify-content: space-between;
   grid-template-columns: 1fr;
   justify-items: center;
   gap: 7px;
-}
+} */
 
 .form_amount-btn {
-  width: 8em;
-  height: 2.5em;
-  font-size: 1.7em;
-  line-height: 2.5em;
+  margin: 2px;
+  height: 2em;
+  font-size: 1.4em;
+  line-height: 2em;
 }
 
 .form__label-radio {
@@ -379,4 +386,8 @@ main {
   font-size: 1.2em;
 }
 
-
+@media (min-width: 992px) {
+  * {
+    font-size: 18px;
+  }
+}

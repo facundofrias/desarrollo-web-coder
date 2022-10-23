@@ -65,17 +65,49 @@
   </header>
   <!-- En el main se muestran una imágen y las últimas noticias en materia de medioambiente -->
   <main class="main">
-    <div class="main__container">
-      <div class="main__title-text-container">
-        <h2 class="main__title">Donaciones</h2>
-        <p class="main__description">
-          Desde 2018 trabajamos para hacer de este planeta un lugar ecológicamente más habitable. Actualmente somos 28 personas que, voluntariamente, llevamos a cabo diversas actividades vinculadas con el cuidado del medioambiente.
-          Lo hacemos mediante charlas de concientización en escuelas y universidades relacionadas con el uso y consumo responsable de recursos y servicios (agua, energia, combustible, etc) y el tratado de residuos.
-          Realizamos cursos presenciales en distintas localidades del país, relacionadas energía sustentable (instalación de paneles y tanques de agua solares). Por otro lado, ofrecemos capacitaciones virtuales vinculadas con el armado de composteras, diseño e implementación de huertas hogareñas, etc.
-          <br>
-          Tu aporte nos ayuda y motiva a seguir trabajando en pos de un mundo sustentable y libre de ecocidio.
-        </p>
+    <div class="container-fluid container-md py-3">
+      <div class="row">
+        <div class="main__title-text-container">
+          <h2 class="main__title">Donaciones</h2>
+          <p class="main__description">
+            Desde 2018 trabajamos para hacer de este planeta un lugar ecológicamente más habitable. Actualmente somos 28 personas que, voluntariamente, llevamos a cabo diversas actividades vinculadas con el cuidado del medioambiente.
+            Lo hacemos mediante charlas de concientización en escuelas y universidades relacionadas con el uso y consumo responsable de recursos y servicios (agua, energia, combustible, etc) y el tratado de residuos.
+            Realizamos cursos presenciales en distintas localidades del país, relacionadas energía sustentable (instalación de paneles y tanques de agua solares). Por otro lado, ofrecemos capacitaciones virtuales vinculadas con el armado de composteras, diseño e implementación de huertas hogareñas, etc.
+            <br>
+            Tu aporte nos ayuda y motiva a seguir trabajando en pos de un mundo sustentable y libre de ecocidio.
+          </p>
+        </div>
       </div>
+      <form action="">
+        <!-- Montos -->
+        <div class="form__data-container">
+          <div class="form__amount-question d-flex flex-column justify-content-between flex-sm-row">
+            <h3 class="form__title-donation p-0 p-sm-3"> ¿CUÁNTO QUERÉS DONAR?</h3>
+            <span class="form__span-amount p-0 pb-4 p-sm-3">Los montos están expresados en Pesos Argentinos (ARS $)</span>
+          </div>
+          <ul class="form__amounts p-0 row g-1">
+            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$5.000,00</li>
+            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$2.000,00</li>
+            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$1.500,00</li>
+            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$1.000,00</li>
+            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$500,00</li>
+            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">Otro monto</li>
+          </ul>
+          <div class="form__frequency">
+            <h3 class="form__title-donation">¿CON QUÉ FRECUENCIA QUERÉS DONAR? </h3>
+            <input class="form__input-radio" type="radio" id="mensual" name="frecuencia">
+            <label class="form__label-radio" for="mensual">Mensual</label>
+            <input class="form__input-radio" type="radio" id="unica-vez" name="frecuencia">
+            <label class="form__label-radio" for="unica-vez">Única vez</label>
+          </div>
+        </div>
+      </form>
+    </div>
+    <div class="container-fluid separador text-center">
+      SEPARADOR 
+    </div>
+
+    <div class="main__container">
       <div class="form">
         <form action="">
           <!-- Montos -->
@@ -105,33 +137,33 @@
             <h3 class="form__title-donation">DATOS PERSONALES</h3>
             <div class="form__input-rows">
               <div class="form__input-columns">
-                <label for="nombre">Nombre/s</label><br>
+                <label class="form__label" for="nombre">Nombre/s</label><br>
                 <input class="form__input" type="text" class="form__firstname"  id="nombre" required>
               </div>
               <div class="form__input-columns">
-                <label for="apellido">Apellido/s</label><br>
+                <label class="form__label" for="apellido">Apellido/s</label><br>
                 <input class="form__input" type="text" class="form__surname" id="apellido" required>
               </div>
               <div class="form__input-columns"> 
-                <label for="email">Email</label><br>
+                <label class="form__label" for="email">Email</label><br>
                 <input class="form__input" type="email" class="form__email" id="email" required>
               </div>
             </div>
             <div class="form__input-rows">
               <div class="form__input-columns">
-                <label for="ciudad">Ciudad</label><br>
+                <label class="form__label" for="ciudad">Ciudad</label><br>
                 <input class="form__input form__input-medium" type="text" class="form__city" id="ciudad" required>
               </div>
               <div class="form__input-columns">
-                <label for="provincia">Provincia</label><br>
+                <label class="form__label" for="provincia">Provincia</label><br>
                 <input class="form__input form__input-medium" type="text" class="form__province" required>
               </div>
               <div class="form__input-columns">
-                <label for="pais">País</label><br>
+                <label class="form__label" for="pais">País</label><br>
                 <input class="form__input form__input-medium" type="text" class="form__country" required>
               </div>
               <div class="form__input-columns">
-                <label for="telefono">Teléfono (sin "0" ni "15")</label><br>
+                <label class="form__label" for="telefono">Teléfono (sin "0" ni "15")</label><br>
                 <input class="form__input form__input-medium" type="number" id="telefono" required>
               </div>
             </div>
@@ -142,25 +174,25 @@
             <div class="form__owner-data">
               <div class="form__input-rows">
                 <div class="form__input-columns">
-                  <label for="nombre-duenio-tarjeta">Nombre que figura en la tarjeta</label><br>
+                  <label class="form__label" for="nombre-duenio-tarjeta">Nombre que figura en la tarjeta</label><br>
                   <input class="form__input " type="text" id="nombre-duenio-tarjeta" required>
                 </div>
                 <div class="form__input-columns">
-                  <label for="numero-tarjeta">Número de la tarjeta</label><br>
+                  <label class="form__label" for="numero-tarjeta">Número de la tarjeta</label><br>
                   <input class="form__input" type="number" id="numero-tarjeta"  required>
                 </div>
                 <div class="form__input-columns">
-                  <label for="expira">Fecha de expiración</label><br>
+                  <label class="form__label" for="expira">Fecha de expiración</label><br>
                   <input class="form__input form__input-medium" type="month" id="expira"  required>
                 </div>
                 <div class="form__input-columns">
-                  <label for="cvv">Código de seguridad</label><br>
+                  <label class="form__label" for="cvv">Código de seguridad</label><br>
                   <input class="form__input form__input-tiny" type="number" id="cvv"  required>
                 </div>
               </div>
               <div class="form__input-rows">
                 <div class="form__input-columns">
-                  <label for="tipo-documento">Tipo de documento</label><br>
+                  <label class="form__label" for="tipo-documento">Tipo de documento</label><br>
                   <select class="form__input form__input-small" id="tipo-documento">
                     <option value="dni" selected>DNI</option>
                     <option value="lc">L.C.</option>
@@ -170,7 +202,7 @@
                   </select>
                 </div>
                 <div class="form__input-columns">
-                  <label for="dni">DNI</label><br>
+                  <label class="form__label" for="dni">DNI</label><br>
                   <input class="form__input form__input-small" type="number" id="dni"  required>
                 </div>
               </div>
