@@ -24,218 +24,236 @@
 <body>
   <!-- Header -->
   <!-- Muestra el logo de la ONG, un campo de búsuqeda, un botón para suscribirse al newslettter y la barra de navegación -->
-  <header class="header">
-    <div class="header__container">
-      <!--  Bloque contenedor del área de búsqueda-->
-      <div class="search-container">
-        <form action="">
-          <input type="text" class="search-container__search" placeholder="Buscar..." required>
-          <a class="search-container__btn btn">
+  <header class="header navbar navbar-expand-md">
+    <div class="container-fluid container-lg">
+      <h1 class="header__main-title">Reciclarg</h1>
+      <a class="header__main-page" href="../index.html">
+        <img class="header__logo-img" src="../img/logo.png" alt="Reciclarg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+          <i class="header__togller fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end gap-2" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./comunidad.html">Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./talleres-cursos.html">Talleres
+              y cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./donaciones.html">Donaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control header__search-input" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="header__search-btn btn btn-outline-success" type="submit">
             <i class="fa-solid fa-magnifying-glass search-container__icon"></i>
-          </a>
+          </button>
         </form>
-      </div>
-      <!-- Bloque contenedor del título principal (logo, título oculto) -->
-      <div class="title-container">
-        <h1 class="title-container__main-title">Reciclarg</h1>
-        <a class="title-container__link-main-page" href="./index.html">
-          <img class="title-container__img" src="./img/logo.png" alt="Reciclarg">
-        </a>
-      </div>
-      <!-- Bloque contenedor de botón de suscripción -->
-      <div class="header__sub-container">
-        <a class="header__sub-btn btn">Suscribete</a>
+        <!-- Bloque contenedor de botón de suscripción -->
+        <div class="header__sub-container">
+          <a class="header__sub-btn btn">Suscribete</a>
+        </div>
       </div>
     </div>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/comunidad.html" target="_blank">Comunidad</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/donaciones.html" target="_blank">Donaciones</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/contacto.html" target="_blank">Contacto</a>
-        </li>
-      </ul>
-    </nav>
   </header>
-  <main class="workshops-courses">
-    <!-- Título y descripción de la página -->
-    <div class="main__title-text-container">
-      <h2 class="main__title">Comunidad</h2>
-      <p class="main__description">
-        RECICLARG es una ONG creada en 2018, impulsada y autogestionada por personas que buscan soluciones sustentables
-        a problemáticas relacionadas con el impácto negativo que le provocamos a nuestro planeta en materia de medio
-        ambiente, llevando a cabo actividades que promueven el consumo responsable de recursos y la concientización
-        sobre el cuidado de nuestro planeta.
-        A la vez, realizamos talleres virtuales y presenciales a lo largo del país, todas gratuitas, dictadas por
-        personas que no solo están capacitadas sino que lo hacen de manera totalmente voluntaria.
-        Esta organización se sustenta economicamente solo de donaciones voluntarias, que hacen posible el mantenimiento
-        del sitio y dan soporte a las actividades que se realizan.
-      </p>
-    </div>
-    <section class="data-section">
-      <div class="data-section__title-container">
-        <h2 class="data-section__headline">Nuestro equipo</h2>
-        <a class="data-section__ver-mas btn" href="#">Ver más</a>
+  <main class="main">
+    <!-- Contenedor Bootstrap del contenido del MAIN -->
+    <div class="container">
+      <div class="row">
+        <!-- Título y descripción de la página -->
+        <div class="main__title-text-container col">
+          <h2 class="main__title">Comunidad</h2>
+          <p class="main__description">
+            RECICLARG es una ONG creada en 2018, impulsada y autogestionada por personas que buscan soluciones
+            sustentables
+            a problemáticas relacionadas con el impácto negativo que le provocamos a nuestro planeta en materia de medio
+            ambiente, llevando a cabo actividades que promueven el consumo responsable de recursos y la concientización
+            sobre el cuidado de nuestro planeta.
+            A la vez, realizamos talleres virtuales y presenciales a lo largo del país, todas gratuitas, dictadas por
+            personas que no solo están capacitadas sino que lo hacen de manera totalmente voluntaria.
+            Esta organización se sustenta economicamente solo de donaciones voluntarias, que hacen posible el
+            mantenimiento
+            del sitio y dan soporte a las actividades que se realizan.
+          </p>
+        </div>
       </div>
-      <!-- Bloque | Artículo dedicado a mostrar miembro/a del staff -->
-      <div class="data-container">
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/comunidad/user1.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title article__team-person-title">Persona</h3>
-            <h4>Profesión</h4>
+      <section>
+        <div class="row">
+          <div class="d-flex p-0">
+            <h2 class="data-section__headline">Nuestro equipo</h2>
+            <a class="data-section__ver-mas btn" href="#">Ver más</a>
           </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/comunidad/user2.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title article__team-person-title">Persona</h3>
-            <h4>Profesión</h4>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/comunidad/user1.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title article__team-person-title">Persona</h3>
+                <h4>Profesión</h4>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/comunidad/user3.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title article__team-person-title">Persona</h3>
-            <h4>Profesión</h4>
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/comunidad/user1.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title article__team-person-title">Persona</h3>
+                <h4>Profesión</h4>
+              </div>
+            </article>
           </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/comunidad/user4.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title article__team-person-title">Persona</h3>
-            <h4>Profesión</h4>
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/comunidad/user1.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title article__team-person-title">Persona</h3>
+                <h4>Profesión</h4>
+              </div>
+            </article>
           </div>
-        </article>
-      </div>
-    </section>
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/comunidad/user1.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title article__team-person-title">Persona</h3>
+                <h4>Profesión</h4>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+    </div>    
   </main>
   <!-- El footer mostrará el menú de navegación, las redes sociales de la ONG, una opción para suscribirse al newsletter y una lista de reproducción en Spotify creada por la comunidad de dicha organización-->
   <footer class="footer">
-    <section class="footer__container">
-      <div class="nav-menu">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Reciclarg</h2>
+    <div class="footer__container container">
+      <div class="row">
+        <div class="nav-menu col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Reciclarg</h2>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/comunidad.html">
+                  <i class="fa-solid fa-people-group"></i>
+                  <span class="footer__span">Comunidad</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/talleres-cursos.html">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span class="footer__span">Talleres y cursos</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/donaciones.html">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  <span class="footer__span">Donaciones</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/contacto.html">
+                  <i class="fa-solid fa-address-card"></i>
+                  <span class="footer__span">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__menu">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/comunidad.html" target="_blank">
-                <i class="fa-solid fa-people-group"></i>
-                <span class="footer__span">Comunidad</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/talleres-cursos.html" target="_blank">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span class="footer__span">Talleres y cursos</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/donaciones.html" target="_blank">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                <span class="footer__span">Donaciones</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/contacto.html" target="_blank">
-                <i class="fa-solid fa-address-card"></i>
-                <span class="footer__span">Contacto</span>
-              </a>
-            </li>
-          </ul>
+        <div class="footer__social col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Seguinos en</h2>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span class="footer__span">Facebook</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span class="footer__span">Twitter</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span class="footer__span">Instagam</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                  <span class="footer__span">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__podcast col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Podcast</h2>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-spotify"></i>
+                  <span class="footer__span">Spotify</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-solid fa-podcast"></i>
+                  <span class="footer__span">Apple podcast</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__sub col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Newsletter</h2>
+          </div>
+          <div>
+            <form class="footer_form-sub" action="">
+              <input class="footer__input form-control" type="email" placeholder="Email" required>
+              <input class="footer__btn btn" type="submit" value="Suscribite"></input>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="footer__social">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Seguinos en</h2>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-facebook"></i>
-                <span class="footer__span">Facebook</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-twitter"></i>
-                <span class="footer__span">Twitter</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <span class="footer__span">Instagam</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-youtube"></i>
-                <span class="footer__span">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__podcast">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Podcast</h2>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-spotify"></i>
-                <span class="footer__span">Spotify</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-solid fa-podcast"></i>
-                <span class="footer__span">Apple podcast</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__sub">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Newsletter</h2>
-        </div>
-        <div>
-          <form class="footer_form-sub" action="">
-            <input class="footer__input" type="email" placeholder="Email" required>
-            <input class="footer__btn btn" type="submit" value="Suscribite"></input>
-          </form>
-        </div>
-      </div>
-    </section>
+    </div>
   </footer>
 
   <!-- Script Bootstrap -->

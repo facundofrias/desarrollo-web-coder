@@ -1,203 +1,262 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- Estilos css -->
-    <link rel="stylesheet" href="../styles/bootstrap.min.css">
-    <link rel="stylesheet" href="../styles/styles.css">
-  
-    <!-- Fuentes -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
-  
-    <!-- Font Awesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://kit.fontawesome.com/94e5c9ec87.js" crossorigin="anonymous"></script>
-    <title>Reciclarg | Talleres y cursos</title>
-  </head>
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Estilos css -->
+  <link rel="stylesheet" href="../styles/bootstrap.min.css">
+  <link rel="stylesheet" href="../styles/styles.css">
+
+  <!-- Fuentes -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Pathway+Gothic+One&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://kit.fontawesome.com/94e5c9ec87.js" crossorigin="anonymous"></script>
+  <title>Reciclarg | Talleres y cursos</title>
+</head>
+
 <body>
   <!-- Header -->
   <!-- Muestra el logo de la ONG, un campo de búsuqeda, un botón para suscribirse al newslettter y la barra de navegación -->
-  <header class="header">
-    <div class="header__container">
-      <!--  Bloque contenedor del área de búsqueda-->
-      <div class="search-container">
-        <form action="">
-          <input type="text" class="search-container__search" placeholder="Buscar..." required>
-          <a class="search-container__btn btn">
+  <header class="header navbar navbar-expand-md">
+    <div class="container-fluid container-lg">
+      <h1 class="header__main-title">Reciclarg</h1>
+      <a class="header__main-page" href="../index.html">
+        <img class="header__logo-img" src="../img/logo.png" alt="Reciclarg">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span>
+          <i class="header__togller fa-solid fa-bars"></i>
+        </span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end gap-2" id="navbarSupportedContent">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./comunidad.html">Comunidad</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./talleres-cursos.html">Talleres
+              y cursos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./donaciones.html">Donaciones</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control header__search-input" type="search" placeholder="Buscar" aria-label="Search">
+          <button class="header__search-btn btn btn-outline-success" type="submit">
             <i class="fa-solid fa-magnifying-glass search-container__icon"></i>
-          </a>
+          </button>
         </form>
-      </div>
-      <!-- Bloque contenedor del título principal (logo, título oculto) -->
-      <div class="title-container">
-        <h1 class="title-container__main-title">Reciclarg</h1>
-        <a class="title-container__link-main-page" href="./index.html">
-          <img class="title-container__img" src="./img/logo.png" alt="Reciclarg">
-        </a>
-      </div>
-      <!-- Bloque contenedor de botón de suscripción -->
-      <div class="header__sub-container">
-        <a class="header__sub-btn btn">Suscribete</a>
+        <!-- Bloque contenedor de botón de suscripción -->
+        <div class="header__sub-container">
+          <a class="header__sub-btn btn">Suscribete</a>
+        </div>
       </div>
     </div>
-    <!-- Barra de navegación -->
-    <nav class="navbar">
-      <ul class="navbar__menu">
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/comunidad.html" target="_blank">Comunidad</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/talleres-cursos.html" target="_blank">Talleres y cursos</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/donaciones.html" target="_blank">Donaciones</a>
-        </li>
-        <li class="navbar__menu-element">
-          <a class="navbar__menu-item" href="./pages/contacto.html" target="_blank">Contacto</a>
-        </li>
-      </ul>
-    </nav>
   </header>
   <main class="main">
-    <div class="main__title-text-container">
-      <h2 class="main__title">Talleres y cursos</h2>
-      <p class="main__description">
-        Descripción de la dinámica sobre el dictado de talleres y cursos: <br>
-        Todos los talleres y cursos que se dictan, tanto presenciales como no de modalidad no presencial son de acceso libre y gratuito. Algunos de ellos tienen un cupo limitado. Esto permite poder brindar una calidad óptima tanto a la hora de enseñar conceptos teóricos y prácticos como también asegurar el aprendizaje de quienes participan.
-      </p>
+    <!-- Contenedor Bootstrap del contenido del MAIN -->
+    <div class="container pt-4 pb-3">
+      <div class="row">
+        <h2 class="main__title">Talleres y cursos</h2>
+        <p class="main__description">
+          Descripción de la dinámica sobre el dictado de talleres y cursos: <br>
+          Todos los talleres y cursos que se dictan, tanto presenciales como no de modalidad no presencial son de acceso
+          libre y gratuito. Algunos de ellos tienen un cupo limitado. Esto permite poder brindar una calidad óptima
+          tanto a la hora de enseñar conceptos teóricos y prácticos como también asegurar el aprendizaje de quienes
+          participan.
+        </p>
+      </div>
+      <!-- Bloque | Sección dedicada a mostrar datos -> Próximos talleres -->
+      <section class="main__data-section py-3">
+        <div class="row">
+          <div class="d-flex p-0">
+            <h3 class="data-section__headline">Próximos talleres</h3>
+            <a class="data-section__ver-mas btn" href="#">Ver más</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h4 class="article__post-title">Arquitectura sustentable</h4>
+                <p class="m-0 py-1">
+                  El objetivo de este taller es <strong> compartir conocimientos y herramientas que ayuden a entender y
+                    proyectar los espacios en los que vivimos</strong>, en relación al entorno natural y a las
+                  necesidades y deseos de las personas.
+                </p>
+                <p>
+                  <strong>Dinámica: </strong>Teórico/práctica. <br>
+                  <strong>A cargo de: </strong>Gabriela Suárez. <br>
+                  <strong>Modalidad: </strong>Presencial.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h4 class="article__post-title">Arquitectura sustentable</h4>
+                <p class="article__p">
+                  El objetivo de este taller es <strong> compartir conocimientos y herramientas que ayuden a entender y
+                    proyectar los espacios en los que vivimos</strong>, en relación al entorno natural y a las
+                  necesidades y deseos de las personas. <br>
+                  <strong>Dinámica: </strong>Teórico/práctica. <br>
+                  <strong>A cargo de: </strong>Gabriela Suárez. <br>
+                  <strong>Modalidad: </strong>Presencial.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h4 class="article__post-title">Arquitectura sustentable</h4>
+                <p class="article__p">
+                  El objetivo de este taller es <strong> compartir conocimientos y herramientas que ayuden a entender y
+                    proyectar los espacios en los que vivimos</strong>, en relación al entorno natural y a las
+                  necesidades y deseos de las personas. <br>
+                  <strong>Dinámica: </strong>Teórico/práctica. <br>
+                  <strong>A cargo de: </strong>Agustina Suárez. <br>
+                  <strong>Modalidad: </strong>Presencial.
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 p-1">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h4 class="article__post-title">Arquitectura sustentable</h4>
+                <p class="article__p">
+                  El objetivo de este taller es <strong> compartir conocimientos y herramientas que ayuden a entender y
+                    proyectar los espacios en los que vivimos</strong>, en relación al entorno natural y a las
+                  necesidades y deseos de las personas. <br>
+                  <strong>Dinámica: </strong>Teórico/práctica. <br>
+                  <strong>A cargo de: </strong>Gabriela Suárez.<br>
+                  <strong>Modalidad: </strong>Presencial.
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Bloque | Sección dedicada a mostrar datos -> Próximos cursos -->
+      <section class="main__data-section py-3">
+        <div class="row">
+          <div class="d-flex p-0">
+            <h3 class="data-section__headline">Próximos cursos</h3>
+            <a class="data-section__ver-mas btn" href="#">Ver más</a>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title">Título curso</h3>
+                <p class="article__p">
+                  Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+                  Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title">Título curso</h3>
+                <p class="article__p">
+                  Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+                  Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title">Título curso</h3>
+                <p class="article__p">
+                  Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+                  Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
+                </p>
+              </div>
+            </article>
+          </div>
+          <div class="col">
+            <article class="article">
+              <a href="#" class="article__post-media">
+                <div class="article__img-post">
+                  <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
+                </div>
+              </a>
+              <div class="article__post-container">
+                <h3 class="article__post-title">Título curso</h3>
+                <p class="article__p">
+                  Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+                  Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
+                </p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <!-- Bloque | Sección dedicada a mostrar datos -> Próximas actividades -->
+      <section class="data-section">
+        <div class="row">
+          <div class="d-flex p-0">
+            <h3 class="data-section__headline">Próximas actividades</h3>
+            <a class="data-section__ver-mas btn" href="#">Ver más</a>
+          </div>
+        </div>
+      </section>
     </div>
-    <!-- Bloque | Sección dedicada a mostrar datos -> Próximos talleres -->
-    <section class="data-section">
-      <div class="data-section__title-container">
-        <h2 class="data-section__headline">Próximos talleres</h2>
-        <a class="data-section__ver-mas btn" href="#">Ver más</a>
-      </div>
-      <!-- Bloque | Artículo dedicado a mostrar un taller -->
-      <div class="data-container">
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Arquitectura sustentable</h3>
-            <p class="article__p">
-              El objetivo de este taller es <strong> compartir conocimientos y herramientas que ayuden a entender y proyectar los espacios en los que vivimos</strong>, en relación al entorno natural y a las necesidades y deseos de las personas. <br><br>
-              <strong>Dinámica: </strong>Teórico/práctica. <br> 
-              <strong>A cargo de: </strong>Gabriela Suárez.
-            </p>
-          </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título taller</h3>
-            <p class="article__p">
-              Descripción taller: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="Imágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título taller</h3>
-            <p class="article__p">
-              Descripción taller: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/taller.jpg" alt="AImágen del taller">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título taller</h3>
-            <p class="article__p">
-              Descripción taller: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- Bloque | Sección dedicada a mostrar datos -> Próximos cursos -->
-    <section class="data-section">
-      <div class="data-section__title-container">
-        <h2 class="data-section__headline">Próximos cursos</h2>
-        <a class="data-section__ver-mas btn" href="#">Ver más</a>
-      </div>
-      <!-- Bloque | Artículo dedicado a mostrar un curso -->
-      <div class="data-container">
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título curso</h3>
-            <p class="article__p">
-              Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título curso</h3>
-            <p class="article__p">
-              Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título curso</h3>
-            <p class="article__p">
-              Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-        <article class="article">
-          <a href="#" class="article__post-media">
-            <div class="article__img-post">
-              <img class="article__img" src="../img/talleres-cursos/curso.jpg" alt="Imágen del curso">
-            </div>
-          </a>
-          <div class="article__post-container">
-            <h3 class="article__post-title">Título curso</h3>
-            <p class="article__p">
-              Descripción curso: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
-            </p>
-          </div>
-        </article>
-      </div>
-    </section>
-    <!-- Bloque | Sección dedicada a mostrar datos -> Próximos cursos -->
+    <!-- Bloque | Sección dedicada a mostrar datos -> Próximas actividades -->
     <section class="data-section">
       <div class="data-section__title-container">
         <h2 class="data-section__headline">Otras actividades</h2>
@@ -214,7 +273,8 @@
           <div class="article__post-container">
             <h3 class="article__post-title">Título actividad</h3>
             <p class="article__p">
-              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+              Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
             </p>
           </div>
         </article>
@@ -227,7 +287,8 @@
           <div class="article__post-container">
             <h3 class="article__post-title">Título actividad</h3>
             <p class="article__p">
-              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+              Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
             </p>
           </div>
         </article>
@@ -240,7 +301,8 @@
           <div class="article__post-container">
             <h3 class="article__post-title">Título actividad</h3>
             <p class="article__p">
-              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+              Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
             </p>
           </div>
         </article>
@@ -253,7 +315,8 @@
           <div class="article__post-container">
             <h3 class="article__post-title">Título actividad</h3>
             <p class="article__p">
-              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius. Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores 
+              Descripción actividad: lorem ipsum dolor sit amet consectetur adipisicing elit. Searum dolores eius.
+              Laudantium consequuntur reprehenderit omnis hic, quaerat magni quod, asperiores
             </p>
           </div>
         </article>
@@ -262,109 +325,112 @@
   </main>
   <!-- El footer mostrará el menú de navegación, las redes sociales de la ONG, una opción para suscribirse al newsletter y una lista de reproducción en Spotify creada por la comunidad de dicha organización-->
   <footer class="footer">
-    <section class="footer__container">
-      <div class="nav-menu">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Reciclarg</h2>
+    <div class="footer__container container">
+      <div class="row">
+        <div class="nav-menu col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Reciclarg</h2>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__list">
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/comunidad.html">
+                  <i class="fa-solid fa-people-group"></i>
+                  <span class="footer__span">Comunidad</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/talleres-cursos.html">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                  <span class="footer__span">Talleres y cursos</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/donaciones.html">
+                  <i class="fa-solid fa-hand-holding-dollar"></i>
+                  <span class="footer__span">Donaciones</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="./pages/contacto.html">
+                  <i class="fa-solid fa-address-card"></i>
+                  <span class="footer__span">Contacto</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div class="footer__menu">
-          <ul class="footer__list">
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/comunidad.html" target="_blank">
-                <i class="fa-solid fa-people-group"></i>
-                <span class="footer__span">Comunidad</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/talleres-cursos.html" target="_blank">
-                <i class="fa-solid fa-graduation-cap"></i>
-                <span class="footer__span">Talleres y cursos</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/donaciones.html" target="_blank">
-                <i class="fa-solid fa-hand-holding-dollar"></i>
-                <span class="footer__span">Donaciones</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="./pages/contacto.html" target="_blank">
-                <i class="fa-solid fa-address-card"></i>
-                <span class="footer__span">Contacto</span>
-              </a>
-            </li>
-          </ul>
+        <div class="footer__social col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Seguinos en</h2>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-facebook"></i>
+                  <span class="footer__span">Facebook</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-twitter"></i>
+                  <span class="footer__span">Twitter</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-instagram"></i>
+                  <span class="footer__span">Instagam</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-youtube"></i>
+                  <span class="footer__span">Youtube</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__podcast col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Podcast</h2>
+          </div>
+          <div class="footer__menu">
+            <ul class="footer__ul">
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-brands fa-spotify"></i>
+                  <span class="footer__span">Spotify</span>
+                </a>
+              </li>
+              <li class="footer__item">
+                <a class="footer__link" href="#">
+                  <i class="fa-solid fa-podcast"></i>
+                  <span class="footer__span">Apple podcast</span>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__sub col-6 col-md-3">
+          <div class="footer__title-container">
+            <h2 class="footer__title">Newsletter</h2>
+          </div>
+          <div>
+            <form class="footer_form-sub" action="">
+              <input class="footer__input form-control" type="email" placeholder="Email" required>
+              <input class="footer__btn btn" type="submit" value="Suscribite"></input>
+            </form>
+          </div>
         </div>
       </div>
-      <div class="footer__social">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Seguinos en</h2>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-facebook"></i>
-                <span class="footer__span">Facebook</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-twitter"></i>
-                <span class="footer__span">Twitter</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-instagram"></i>
-                <span class="footer__span">Instagam</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-youtube"></i>
-                <span class="footer__span">Youtube</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__podcast">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Podcast</h2>
-        </div>
-        <div class="footer__menu">
-          <ul class="footer__ul">
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-brands fa-spotify"></i>
-                <span class="footer__span">Spotify</span>
-              </a>
-            </li>
-            <li class="footer__item">
-              <a class="footer__link" href="#">
-                <i class="fa-solid fa-podcast"></i>
-                <span class="footer__span">Apple podcast</span>
-              </a>
-            </li>
-          </ul>
-        </div>
-      </div>
-      <div class="footer__sub">
-        <div class="footer__title-container">
-          <h2 class="footer__title">Newsletter</h2>
-        </div>
-        <div>
-          <form class="footer_form-sub" action="">
-            <input class="footer__input" type="email" placeholder="Email" required>
-            <input class="footer__btn btn" type="submit" value="Suscribite"></input>
-          </form>
-        </div>
-      </div>
-    </section>
+    </div>
   </footer>
 
   <!-- Script Bootstrap -->
   <script src="../js/bootstrap.bundle.min.js"></script>
 </body>
+
 </html>
