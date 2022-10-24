@@ -46,6 +46,7 @@ a {
 .form-control {
   height: 1.6em;
   border-radius: 3px;
+  padding: 0 0.4rem;
 }
 
 .form-control:focus {
@@ -118,7 +119,6 @@ a {
   padding: 0 3px;
   width: 100%;
   max-width: 120px;
-  height: 1.6em;
   border-radius: 3px 0 0 3px;
 }
 
@@ -270,10 +270,6 @@ main {
 
 /* /donaciones.html */
 
-.separador {
-  background-color: crimson;
-}
-
 .form__data-container {
   padding: 10px 0;
   border-bottom: 2px solid var(--verde-musgo);
@@ -313,8 +309,8 @@ main {
   gap: 7px;
 } */
 
-.form_amount-btn {
-  margin: 2px;
+.form__amount-btn {
+  width: 6rem;
   height: 2em;
   font-size: 1.4em;
   line-height: 2em;
@@ -325,18 +321,15 @@ main {
 }
 
 .form__input {
-  border: 1px solid gray;
-  border-radius: 3px;
-  width: 10em;
-  height: 1.4em;
+  max-width: 14em;
 }
 
 .form__input-medium {
-  width: 8em;
+  width: 10em;
 }
 
 .form__input-small {
-  width: 5em;
+  width: em;
 }
 
 .form__input-tiny {
@@ -350,14 +343,20 @@ main {
 }
 
 .form__donate-btn {
-  padding: 5px 10px;
+  padding: 0 10px;
   font-size: 1.8em;
   text-align: center;
 }
 
 /* /contacto.html */
 
-.contact-info__container {
+.main__map {
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+}
+
+/* .contact-info__container {
   display: flex;
   justify-content: space-between;
 }
@@ -384,7 +383,7 @@ main {
   padding: 5px 0;
   display: block;
   font-size: 1.2em;
-}
+} */
 
 @media (min-width: 992px) {
   * {

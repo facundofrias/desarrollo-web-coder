@@ -66,7 +66,7 @@
   <!-- En el main se muestran una imágen y las últimas noticias en materia de medioambiente -->
   <main class="main">
     <div class="container-fluid container-md py-3">
-      <div class="row">
+      <div class="row py-3">
         <div class="main__title-text-container">
           <h2 class="main__title">Donaciones</h2>
           <p class="main__description">
@@ -85,13 +85,19 @@
             <h3 class="form__title-donation p-0 p-sm-3"> ¿CUÁNTO QUERÉS DONAR?</h3>
             <span class="form__span-amount p-0 pb-4 p-sm-3">Los montos están expresados en Pesos Argentinos (ARS $)</span>
           </div>
-          <ul class="form__amounts p-0 row g-1">
-            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$5.000,00</li>
-            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$2.000,00</li>
-            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$1.500,00</li>
-            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$1.000,00</li>
-            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">$500,00</li>
-            <li class="form__amounts btn col-7 col-sm-4 col-lg-2">Otro monto</li>
+          <ul class="form__amounts p-0 row g-1 text-center">
+            <div class="col-6 col-sm-4 col-lg-2"><li class="form__amount-btn btn">$5.000,00</li></div>
+            <div class="col-6 col-sm-4 col-lg-2"><li class="form__amount-btn btn">$2.000,00</li></div>
+            <div class="col-6 col-sm-4 col-lg-2"><li class="form__amount-btn btn">$1.500,00</li></div>
+            <div class="col-6 col-sm-4 col-lg-2"><li class="form__amount-btn btn">$1.000,00</li></div>
+            <div class="col-6 col-sm-4 col-lg-2"><li class="form__amount-btn btn">$500,00</li></div>
+            <div class="col-6 col-sm-4 col-lg-2"><li class="form__amount-btn btn">Otro monto</li></div>
+            
+            
+            
+            
+            
+            
           </ul>
           <div class="form__frequency">
             <h3 class="form__title-donation">¿CON QUÉ FRECUENCIA QUERÉS DONAR? </h3>
@@ -101,70 +107,39 @@
             <label class="form__label-radio" for="unica-vez">Única vez</label>
           </div>
         </div>
-      </form>
-    </div>
-    <div class="container-fluid separador text-center">
-      SEPARADOR 
-    </div>
-
-    <div class="main__container">
-      <div class="form">
-        <form action="">
-          <!-- Montos -->
-          <div class="form__data-container">
-            <div class="form__amount-question">
-              <h3 class="form__title-donation"> ¿CUÁNTO QUERÉS DONAR?</h3>
-              <span class="form__span-amount">Los montos están expresados en Pesos Argentinos (ARS $)</span>
-            </div>
-            <ul class="form__amounts">
-              <li class="form_amount-btn btn">$5.000,00</li>
-              <li class="form_amount-btn btn">$2.000,00</li>
-              <li class="form_amount-btn btn">$1.500,00</li>
-              <li class="form_amount-btn btn">$1.000,00</li>
-              <li class="form_amount-btn btn">$500,00</li>
-              <li class="form_amount-btn btn">Otro monto</li>
-            </ul>
-            <div class="form__frequency">
-              <h3 class="form__title-donation">¿CON QUÉ FRECUENCIA QUERÉS DONAR? </h3>
-              <input class="form__input-radio" type="radio" id="mensual" name="frecuencia">
-              <label class="form__label-radio" for="mensual">Mensual</label>
-              <input class="form__input-radio" type="radio" id="unica-vez" name="frecuencia">
-              <label class="form__label-radio" for="unica-vez">Única vez</label>
-            </div>
-          </div>
-          <!-- Datos personales -->
+        <!-- Datos personales -->
           <div class="form__data-container">
             <h3 class="form__title-donation">DATOS PERSONALES</h3>
-            <div class="form__input-rows">
-              <div class="form__input-columns">
+            <div class="row pb-3">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <label class="form__label" for="nombre">Nombre/s</label><br>
-                <input class="form__input" type="text" class="form__firstname"  id="nombre" required>
+                <input class="form__input form-control" type="text" class="form__firstname"  id="nombre" required>
               </div>
-              <div class="form__input-columns">
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3">
                 <label class="form__label" for="apellido">Apellido/s</label><br>
-                <input class="form__input" type="text" class="form__surname" id="apellido" required>
+                <input class="form__input form-control" type="text" class="form__surname" id="apellido" required>
               </div>
-              <div class="form__input-columns"> 
+              <div class="col-12 col-sm-6 col-md-4 col-xl-3"> 
                 <label class="form__label" for="email">Email</label><br>
-                <input class="form__input" type="email" class="form__email" id="email" required>
+                <input class="form__input form-control" type="email" class="form__email" id="email" required>
               </div>
             </div>
-            <div class="form__input-rows">
-              <div class="form__input-columns">
+            <div class="row pb-3">
+              <div class="col-12 col-sm-6 col-md-3 col-xl-2">
                 <label class="form__label" for="ciudad">Ciudad</label><br>
-                <input class="form__input form__input-medium" type="text" class="form__city" id="ciudad" required>
+                <input class="form-control form__input-medium" type="text" class="form__city" id="ciudad" required>
               </div>
-              <div class="form__input-columns">
+              <div class="col-12 col-sm-6 col-md-3 col-xl-2">
                 <label class="form__label" for="provincia">Provincia</label><br>
-                <input class="form__input form__input-medium" type="text" class="form__province" required>
+                <input class="form-control form__input-medium" type="text" class="form__province" required>
               </div>
-              <div class="form__input-columns">
+              <div class="col-12 col-sm-6 col-md-3 col-xl-2">
                 <label class="form__label" for="pais">País</label><br>
-                <input class="form__input form__input-medium" type="text" class="form__country" required>
+                <input class="form-control form__input-medium" type="text" class="form__country" required>
               </div>
-              <div class="form__input-columns">
+              <div class="col-12 col-sm-6 col-md-3 col-xl-2">
                 <label class="form__label" for="telefono">Teléfono (sin "0" ni "15")</label><br>
-                <input class="form__input form__input-medium" type="number" id="telefono" required>
+                <input class="form-control form__input-medium" type="number" id="telefono" required>
               </div>
             </div>
           </div>
@@ -172,28 +147,28 @@
           <div class="form__data-container">
             <h3 class="form__title-donation">¿DE DÓNDE QUERÉS QUE SE DEBIDE LA DONACIÓN?</h3>
             <div class="form__owner-data">
-              <div class="form__input-rows">
-                <div class="form__input-columns">
+              <div class="row pb-3">
+                <div class="col-12 col-sm-6 col-lg-3 py-1">
                   <label class="form__label" for="nombre-duenio-tarjeta">Nombre que figura en la tarjeta</label><br>
-                  <input class="form__input " type="text" id="nombre-duenio-tarjeta" required>
+                  <input class="form-control form__input" type="text" id="nombre-duenio-tarjeta" required>
                 </div>
-                <div class="form__input-columns">
+                <div class="col-12 col-sm-6 col-lg-3 py-1">
                   <label class="form__label" for="numero-tarjeta">Número de la tarjeta</label><br>
-                  <input class="form__input" type="number" id="numero-tarjeta"  required>
+                  <input class="form__input form-control" type="number" id="numero-tarjeta"  required>
                 </div>
-                <div class="form__input-columns">
+                <div class="col-6 col-sm-3 col-md-3 col-lg-2 py-1">
                   <label class="form__label" for="expira">Fecha de expiración</label><br>
-                  <input class="form__input form__input-medium" type="month" id="expira"  required>
+                  <input class="form-control form__input-small" type="month" id="expira"  required>
                 </div>
-                <div class="form__input-columns">
+                <div class="col-6 col-sm-3 col-md-3 col-lg-2 py-1">
                   <label class="form__label" for="cvv">Código de seguridad</label><br>
-                  <input class="form__input form__input-tiny" type="number" id="cvv"  required>
+                  <input class="form-control form__input-tiny" type="number" id="cvv"  required>
                 </div>
               </div>
-              <div class="form__input-rows">
-                <div class="form__input-columns">
+              <div class="row pb-3">
+                <div class="col-6 col-sm-3 col-md-2 py-1">
                   <label class="form__label" for="tipo-documento">Tipo de documento</label><br>
-                  <select class="form__input form__input-small" id="tipo-documento">
+                  <select class="form-control form__input-small" id="tipo-documento">
                     <option value="dni" selected>DNI</option>
                     <option value="lc">L.C.</option>
                     <option value="cuil">CUIL</option>
@@ -201,24 +176,29 @@
                     <option value="otro">Otro</option>
                   </select>
                 </div>
-                <div class="form__input-columns">
+                <div class="col-6 col-sm-3 col-md-2 py-1">
                   <label class="form__label" for="dni">DNI</label><br>
-                  <input class="form__input form__input-small" type="number" id="dni"  required>
+                  <input class="form-control form__input-small" type="number" id="dni"  required>
                 </div>
               </div>
             </div>
           </div>
-          <div class="form__donate-btn-container">
-            <input class="form__donate-btn btn" type="submit" value="DONAR">
+          <div class="main__container">
+            <div class="form">
+              <form action="">
+                <div class="form__donate-btn-container">
+                  <input class="form__donate-btn btn" type="submit" value="DONAR">
+                </div>
+              </form>
+            </div>
           </div>
-        </form>
-      </div>
+      </form>
     </div>
   </main>
   <!-- El footer mostrará el menú de navegación, las redes sociales de la ONG, una opción para suscribirse al newsletter y una lista de reproducción en Spotify creada por la comunidad de dicha organización-->
   <footer class="footer">
     <div class="footer__container container">
-      <div class="row">
+      <div class="row pb-3">
         <div class="nav-menu col-6 col-md-3">
         <div class="footer__title-container">
           <h2 class="footer__title">Reciclarg</h2>
