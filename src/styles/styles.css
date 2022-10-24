@@ -105,7 +105,7 @@ a {
 
 .nav-link {
   padding: 0 7px;
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   color: black;
 }
 
@@ -226,7 +226,7 @@ main {
 
 .footer__link span,
 .footer__link i {
-  font-size: 1.14rem;
+  /* font-size: 1.14rem; */
 }
 
 .footer__link:hover {
@@ -257,7 +257,7 @@ main {
 /* --- PAGES --- */
 
 .main__description {
-  font-size: 1.2em;
+  /* font-size: 1.2em; */
   text-align: justify;
 }
 
@@ -285,11 +285,17 @@ main {
   padding: 4px 20px 4px 0;
 }
 
- .form__amount-question {
+.form__amount-question {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 } */
+
+input[type="date"]::-webkit-inner-spin-button,
+input[type="date"]::-webkit-calendar-picker-indicator {
+    display: none;
+    -webkit-appearance: none;
+  }
 
 .form__title-donation,
 .form__span-amount {
@@ -297,7 +303,7 @@ main {
 }
 
 .form__span-amount {
-  font-size: 1em;
+  /* font-size: 1em; */
 }
 
 /* .form__amounts {
@@ -312,7 +318,7 @@ main {
 .form__amount-btn {
   width: 6rem;
   height: 2em;
-  font-size: 1.4em;
+  /* font-size: 1.4em; */
   line-height: 2em;
 }
 
@@ -322,7 +328,20 @@ main {
 
 .form__input {
   max-width: 14em;
+  border-width: 0 0 2px 0;
+  border-color: var(--verde-principal);
+  background-color: transparent;
+  border-radius: 0;
 }
+
+.form__input:focus {
+  border: 2px solid;
+  border-width: 0 0 2px 0;
+  border-color: var(--verde-principal);
+  background-color: transparent;
+  box-shadow: none;
+}
+
 
 .form__input-medium {
   width: 10em;
@@ -344,7 +363,7 @@ main {
 
 .form__donate-btn {
   padding: 0 10px;
-  font-size: 1.8em;
+  /* font-size: 1.8em; */
   text-align: center;
 }
 
@@ -356,37 +375,8 @@ main {
   height: 250px;
 }
 
-/* .contact-info__container {
-  display: flex;
-  justify-content: space-between;
-}
-
-.info-rows {
-  padding: 1em 0;
-}
-
-.contact-info__main-title {
-  font-size: 2em;
-}
-
-.contact-info__title {
-  padding: 5px 0;
-  font-size: 1.7em;
-}
-
-.contact-info__subtitle {
-  font-size: 1.5em;
-  padding: 1em 0;
-}
-
-.contact-info__data {
-  padding: 5px 0;
-  display: block;
-  font-size: 1.2em;
-} */
-
-@media (min-width: 992px) {
+/* @media (min-width: 992px) {
   * {
     font-size: 18px;
   }
-}
+} */
