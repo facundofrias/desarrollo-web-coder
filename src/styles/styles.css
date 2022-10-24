@@ -40,6 +40,12 @@ a {
   color: black;
 }
 
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
 /* Propiedades generales */
 
 /* Form control de Bootstrap */
@@ -105,7 +111,7 @@ a {
 
 .nav-link {
   padding: 0 7px;
-  /* font-size: 1.2em; */
+  font-size: 1.2em;
   color: black;
 }
 
@@ -226,7 +232,7 @@ main {
 
 .footer__link span,
 .footer__link i {
-  /* font-size: 1.14rem; */
+  font-size: 1.14rem;
 }
 
 .footer__link:hover {
@@ -257,7 +263,7 @@ main {
 /* --- PAGES --- */
 
 .main__description {
-  /* font-size: 1.2em; */
+  font-size: 1.2em;
   text-align: justify;
 }
 
@@ -272,7 +278,7 @@ main {
 
 .form__data-container {
   padding: 10px 0;
-  border-bottom: 2px solid var(--verde-musgo);
+  border-bottom: 3px solid var(--verde-musgo);
 }
 
 /*.form__input-rows {
@@ -303,7 +309,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 }
 
 .form__span-amount {
-  /* font-size: 1em; */
+  font-size: 1em;
 }
 
 /* .form__amounts {
@@ -318,7 +324,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 .form__amount-btn {
   width: 6rem;
   height: 2em;
-  /* font-size: 1.4em; */
+  font-size: 1.4em;
   line-height: 2em;
 }
 
@@ -363,7 +369,7 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 .form__donate-btn {
   padding: 0 10px;
-  /* font-size: 1.8em; */
+  font-size: 1.8em;
   text-align: center;
 }
 
