@@ -239,6 +239,12 @@ main {
   height: 14em;
 }
 
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  font-size: 2rem;
+  color: black;
+}
+
 /* Main | Sección de artículos */
 
 
@@ -269,14 +275,37 @@ main {
   height: auto;
 }
 
+.talleres-cursos {
+ position: relative;
+ min-height: 270px;
+}
+
+
 .article__post-media {
   text-align: center;
 }
 
 .article__post-title,
-.article__p {
+.article__p-description {
   padding: 7px;
   text-align: justify;
+}
+
+.article__p-type {
+  margin: 0;
+  padding: 7px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.article__social-media {
+  padding: 0 4px;
+  font-size: 1.2rem;
+}
+
+.article__social-media:hover {
+  color: rgb(243, 153, 18);
 }
 
 /* FOOTER */
