@@ -69,66 +69,56 @@ input::-webkit-inner-spin-button {
   border-radius: 3px;
   background-color: white;
   color: black;
-}
-
-.btn:hover {
-  background-color: var(--verde-principal);
-  color: white;
-  cursor: pointer;
-}
-
-.glow-on-hover {
-  width: 220px;
-  height: 50px;
-  border: none;
-  outline: none;
-  color: #fff;
-  background: #111;
-  cursor: pointer;
   position: relative;
   z-index: 0;
-  border-radius: 10px;
+
+  transition: 300ms ease-in-out;
+  
 }
 
-.glow-on-hover:before {
+.btn:before {
   content: '';
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+  background-color: var(--verde-principal);
+  /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, var(--verde-principal), #00ffd5, var(--azul-musgo), #7a00ff);
   position: absolute;
   top: -2px;
   left:-2px;
   background-size: 400%;
   z-index: -1;
-  filter: blur(5px);
+  filter: blur(2px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
   animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity .3s ease-in-out;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
-.glow-on-hover:active {
-  color: #000
+.btn:active {
+  color: white;
 }
 
-.glow-on-hover:active:after {
-  background: transparent;
+.btn:active:after {
+  background-color: var(--verde-principal);
+  color: white;
 }
 
-.glow-on-hover:hover:before {
+.btn:hover:before {
   opacity: 1;
 }
 
-.glow-on-hover:after {
+.btn:after {
   z-index: -1;
   content: '';
   position: absolute;
   width: 100%;
   height: 100%;
-  background: #111;
+  background: white;
   left: 0;
   top: 0;
-  border-radius: 10px;
+  border-radius: 3px;
 }
 
 @keyframes glowing {
@@ -137,13 +127,13 @@ input::-webkit-inner-spin-button {
   100% { background-position: 0 0; }
 }
 
-/* .header__container,
-.main__container,
-.footer__container {
-  max-width: 1400px;
-  margin-right: auto;
-  margin-left: auto;
-} */
+.logo-link {
+  transition: 10ms ease-in-out;
+}
+
+.logo-link:hover {
+  width: 110px;
+}
 
 /* --- HEADER --- */
 
@@ -173,6 +163,8 @@ input::-webkit-inner-spin-button {
   padding: 0 7px;
   font-size: 1.2em;
   color: black;
+
+  transition: 170ms ease-in-out;
 }
 
 .nav-link:hover {
@@ -184,7 +176,7 @@ input::-webkit-inner-spin-button {
 .header__search-input {
   padding: 0 3px;
   width: 100%;
-  max-width: 120px;
+  max-width: 210px;
   border-radius: 3px 0 0 3px;
 }
 
@@ -192,6 +184,10 @@ input::-webkit-inner-spin-button {
   padding: 0 7px;
   border-left: 1px solid lightgray;
   border-radius: 0 3px 3px 0 ;
+}
+
+.header__search-btn:hover {
+  color: black;
 }
 
 .header__sub-container {
@@ -257,6 +253,15 @@ main {
   background-color: antiquewhite;
   border-radius: 4px;
   height: 100%;
+
+  transition: 300ms ease-in-out;
+}
+
+.article:hover {
+  background-color: var(--verde-principal);
+  background-color: #2b6114c7;
+  cursor: pointer;
+  color: white;
 }
 
 .article__img {
@@ -295,6 +300,10 @@ main {
   font-size: 1.14rem;
 }
 
+.footer__link {
+  transition: 150ms ease-in-out;
+}
+
 .footer__link:hover {
   color: white;
 }
@@ -319,6 +328,10 @@ main {
   border: 1px solid lightgray;
 }
 
+.footer__logo-img {
+  width: 100px;
+  height: auto;
+}
 
 /* --- PAGES --- */
 
