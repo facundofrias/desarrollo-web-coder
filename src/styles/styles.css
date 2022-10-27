@@ -182,6 +182,7 @@ input::-webkit-inner-spin-button {
 
 .header__search-btn {
   padding: 0 7px;
+  min-width: 26px;
   border-left: 1px solid lightgray;
   border-radius: 0 3px 3px 0 ;
 }
@@ -276,8 +277,8 @@ main {
 }
 
 .talleres-cursos {
- position: relative;
- min-height: 270px;
+  position: relative;
+  min-height: 262px;
 }
 
 
@@ -495,6 +496,9 @@ input[type="date"]::-webkit-calendar-picker-indicator {
   max-width: 400px;
   height: 250px;
 }
+
+
+/* --- Media Queries --- */
 
 /* @media (min-width: 992px) {
   * {
