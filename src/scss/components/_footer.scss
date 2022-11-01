@@ -1,0 +1,45 @@
+.footer {
+
+  // Footer | Contenedores, títulos y enlaces
+
+  &__item {
+    padding: 2px;
+  }
+
+  &__span {
+    margin: 0 2px;
+  }
+
+  &__link span,
+  &__link i {
+    font-size: 1.14rem;
+  }
+  
+  &__link {
+    transition: 150ms ease-in-out;
+    
+    &:hover {
+      color: white;
+    }
+  }
+
+  &__music {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__input,
+  &__btn {
+    padding: 0 2px;
+    width: 100%;
+    min-width: 120px;
+    border-radius: 0;
+    outline: none;
+    border: 1px solid lightgray;
+  }
+
+  &__logo-img {
+    width: 100px;
+    height: auto;
+  }
+}

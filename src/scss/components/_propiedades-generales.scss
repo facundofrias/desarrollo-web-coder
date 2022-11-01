@@ -1,0 +1,88 @@
+// Propiedades generales
+
+// Form control de Bootstrap
+.form-control {
+  height: 1.6em;
+  border-radius: 3px;
+  padding: 0 0.4rem;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 3px hsla(102, 66%, 23%, 0.288);
+  border: #2B6114;
+}
+
+.btn {
+  padding: 0 3px;
+  height: 1.6em;
+  text-align: center;
+  font-weight: 600;
+  border: none;
+  border-radius: 3px;
+  background-color: white;
+  color: black;
+  position: relative;
+  z-index: 0;
+
+  transition: 300ms ease-in-out;
+  
+}
+
+.btn:before {
+  content: '';
+  background-color: var(--verde-principal);
+  /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
+
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, var(--verde-principal), #00ffd5, var(--azul-musgo), #7a00ff);
+  position: absolute;
+  top: -2px;
+  left:-2px;
+  background-size: 400%;
+  z-index: -1;
+  filter: blur(2px);
+  width: calc(100% + 4px);
+  height: calc(100% + 4px);
+  animation: glowing 20s linear infinite;
+  opacity: 0;
+  transition: opacity .3s ease-in-out;
+  border-radius: 3px;
+}
+
+.btn:active {
+  color: white;
+}
+
+.btn:active:after {
+  background-color: var(--verde-principal);
+  color: white;
+}
+
+.btn:hover:before {
+  opacity: 1;
+}
+
+.btn:after {
+  z-index: -1;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: white;
+  left: 0;
+  top: 0;
+  border-radius: 3px;
+}
+
+@keyframes glowing {
+  0% { background-position: 0 0; }
+  50% { background-position: 400% 0; }
+  100% { background-position: 0 0; }
+}
+
+.logo-link {
+  transition: 10ms ease-in-out;
+}
+
+.logo-link:hover {
+  width: 110px;
+}

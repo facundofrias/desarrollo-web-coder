@@ -1,0 +1,52 @@
+.article {
+  padding: 7px;
+  background-color: antiquewhite;
+  border-radius: 4px;
+  height: 100%;
+
+  transition: 300ms ease-in-out;
+
+  &:hover {
+    background-color: var(--verde-principal);
+    background-color: #2b6114c7;
+    cursor: pointer;
+    color: white;
+  }
+
+  &__img {
+    width: 100%;
+    height: auto;
+  }
+
+  &__post-media {
+    text-align: center;
+  }
+
+  &__post-title,
+  &__p-description {
+    padding: 7px;
+    text-align: justify;
+  }
+
+  &__p-type {
+    margin: 0;
+    padding: 7px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
+
+  &__social-media {
+    padding: 0 4px;
+    font-size: 1.2rem;
+
+    &:hover {
+      color: rgb(243, 153, 18);
+    }
+  }
+
+  &__team-person-title {
+    text-align: start;
+    padding: 7px 0;
+  }
+}
