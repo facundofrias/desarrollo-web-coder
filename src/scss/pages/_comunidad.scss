@@ -1,0 +1,7 @@
+.member-info {
+  display: none;
+}
+
+.article:hover + .member-info {
+  display: block;
+}

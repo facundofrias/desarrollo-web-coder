@@ -1,5 +1,5 @@
 .header {
-  background-color: green;
+  background-color: $verde-header;
   position: sticky;
   top: 0px;
   z-index: 3;
@@ -60,7 +60,7 @@
   transition: 170ms ease-in-out;
 
   &:hover {
-    background-color: var(--verde-principal);
+    background-color: $color-principal;
     color: white;
     border-radius: 2px;
   }

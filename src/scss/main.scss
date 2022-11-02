@@ -1,9 +1,19 @@
-
 @import "./utils/variables";
+
 @import "./components/base/base";
 @import "./components/propiedades-generales";
+
 @import "./components/header";
+
 @import "./components/main";
+
+@import "./pages/comunidad";
+@import "./pages/contacto";
+@import "./pages/donaciones";
+@import "./pages/talleres-cursos";
+
 @import "./components/tarjetas/article";
+@import "./components/tarjetas/sections";
 @import "./components/formulario/form";
+
 @import "./components/footer";

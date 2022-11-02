@@ -1,11 +1,16 @@
 .main {
-  background-color: var(--verde-fondo);
+  background-color: $verde-fondo;
   min-height: 750px;
 
   &__map {
     width: 100%;
     max-width: 400px;
     height: 250px;
+  }
+
+  &__description {
+    font-size: 1.2em;
+    text-align: justify;
   }
 }
 

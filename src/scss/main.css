@@ -2,7 +2,7 @@
 /* Generales */
 * {
   margin: 0;
-  padding: 0;
+  padding: 1px;
   box-sizing: border-box;
   font-family: "Pathway Gothic One", sans-serif;
 }
@@ -45,6 +45,7 @@ textarea:-webkit-autofill:focus,
 select:-webkit-autofill,
 select:-webkit-autofill:hover,
 select:-webkit-autofill:focus {
+  -webkit-transition: background-color 5000s ease-in-out 0s;
   transition: background-color 5000s ease-in-out 0s;
 }
 
@@ -75,9 +76,9 @@ select:-webkit-autofill:focus {
 
 .btn:before {
   content: "";
-  background-color: #2B6114;
+  background-color: var(--verde-principal);
   /* background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000); */
-  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #2B6114, #00ffd5, hsl(209deg, 19%, 42%), #7a00ff);
+  background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, var(--verde-principal), #00ffd5, var(--azul-musgo), #7a00ff);
   position: absolute;
   top: -2px;
   left: -2px;
@@ -86,7 +87,8 @@ select:-webkit-autofill:focus {
   filter: blur(2px);
   width: calc(100% + 4px);
   height: calc(100% + 4px);
-  animation: glowing 20s linear infinite;
+  -webkit-animation: glowing 20s linear infinite;
+          animation: glowing 20s linear infinite;
   opacity: 0;
   transition: opacity 0.3s ease-in-out;
   border-radius: 3px;
@@ -97,7 +99,7 @@ select:-webkit-autofill:focus {
 }
 
 .btn:active:after {
-  background-color: #2B6114;
+  background-color: var(--verde-principal);
   color: white;
 }
 
@@ -115,6 +117,18 @@ select:-webkit-autofill:focus {
   left: 0;
   top: 0;
   border-radius: 3px;
+}
+
+@-webkit-keyframes glowing {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
 }
 
 @keyframes glowing {
@@ -137,7 +151,8 @@ select:-webkit-autofill:focus {
 }
 
 .header {
-  background-color: #577f57;
+  background-color: green;
+  position: -webkit-sticky;
   position: sticky;
   top: 0px;
   z-index: 3;
@@ -186,23 +201,19 @@ select:-webkit-autofill:focus {
   transition: 170ms ease-in-out;
 }
 .nav-link:hover {
-  background-color: #2B6114;
+  background-color: var(--verde-principal);
   color: white;
   border-radius: 2px;
 }
 
 .main {
-  background-color: #A3B18A;
+  background-color: var(--verde-fondo);
   min-height: 750px;
 }
 .main__map {
   width: 100%;
   max-width: 400px;
   height: 250px;
-}
-.main__description {
-  font-size: 1.2em;
-  text-align: justify;
 }
 
 .carousel-container {
@@ -222,19 +233,6 @@ select:-webkit-autofill:focus {
   color: black;
 }
 
-.member-info {
-  display: none;
-}
-
-.article:hover + .member-info {
-  display: block;
-}
-
-.talleres-cursos {
-  position: relative;
-  min-height: 262px;
-}
-
 .article {
   padding: 7px;
   background-color: antiquewhite;
@@ -243,7 +241,7 @@ select:-webkit-autofill:focus {
   transition: 300ms ease-in-out;
 }
 .article:hover {
-  background-color: #2B6114;
+  background-color: var(--verde-principal);
   background-color: rgba(43, 97, 20, 0.7803921569);
   cursor: pointer;
   color: white;
@@ -278,11 +276,6 @@ select:-webkit-autofill:focus {
   padding: 7px 0;
 }
 
-.data-section__ver-mas {
-  margin: 0 1.5em;
-  align-self: center;
-}
-
 .form__title-donation, .form__span-amount {
   padding: 14px 0;
 }
@@ -301,14 +294,14 @@ select:-webkit-autofill:focus {
 .form__input {
   max-width: 14em;
   border-width: 0 0 2px 0;
-  border-color: #2B6114;
+  border-color: var();
   background-color: transparent;
   border-radius: 0;
 }
 .form__input:focus {
   border: 2px solid;
   border-width: 0 0 2px 0;
-  border-color: #2B6114;
+  border-color: var(--verde-principal);
   background-color: transparent;
   box-shadow: none;
 }
@@ -332,9 +325,6 @@ select:-webkit-autofill:focus {
   text-align: center;
 }
 
-.footer {
-  background-color: hsl(179deg, 19%, 42%);
-}
 .footer__item {
   padding: 2px;
 }
@@ -365,6 +355,4 @@ select:-webkit-autofill:focus {
 .footer__logo-img {
   width: 100px;
   height: auto;
-}
-
-/*# sourceMappingURL=styles.css.map */
+}/*# sourceMappingURL=main.css.map */

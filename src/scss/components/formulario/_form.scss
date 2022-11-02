@@ -22,14 +22,14 @@
   &__input {
     max-width: 14em;
     border-width: 0 0 2px 0;
-    border-color: var();
+    border-color: $color-principal;
     background-color: transparent;
     border-radius: 0;
 
     &:focus {
       border: 2px solid;
       border-width: 0 0 2px 0;
-      border-color: var(--verde-principal);
+      border-color: $color-principal;
       background-color: transparent;
       box-shadow: none;
     }
