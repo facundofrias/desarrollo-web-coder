@@ -2,31 +2,9 @@
   background-color: $verde-fondo;
   min-height: 750px;
 
-  &__map {
-    width: 100%;
-    max-width: 400px;
-    height: 250px;
-  }
-
   &__description {
     font-size: 1.2em;
     text-align: justify;
   }
 }
 
-.carousel-container {
-  max-width: 887px;
-}
-
-.carousel-indicators [data-bs-target] {
-  margin: 0 5px;
-  width: 14px;
-  height: 14px;
-  border-radius: 100%;
-}
-
-.carousel-control-prev-icon i,
-.carousel-control-next-icon i {
-  font-size: 2rem;
-  color: black;
-}

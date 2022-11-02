@@ -1,3 +1,7 @@
+/* 
+  Se mostrarán el nombre y redes sociales de miembros de la ONG.
+  Los datos se mantienen ocultos hasta que se haga hover sobre la card.
+*/
 .member-info {
   display: none;
 }
@@ -14,13 +18,19 @@
   overflow: hidden;
   background-position: center;
   margin: 10px;
+
+  transition: 0.3s ease;
 }
 
+// Estilos para mostrar los datos
 .card {
   position: relative;
   z-index: 1;
   
   &:hover {
+    
+    @extend %sombra-1;
+    
     .card__rect-1 {
       left: 10%;
       
@@ -30,7 +40,7 @@
     }
     
     .card__circle {
-       transform: scale(1);
+      transform: scale(1);
       
       &:before {
         transform: scale(.9);
@@ -44,6 +54,7 @@
       }
     }
   }
+  
   
   &__rect-1 {
     background: $verde-pantano;
@@ -65,7 +76,7 @@
       transform: skewX(20deg);
     }
 
-   .shadow-1 {
+  .shadow-1 {
       background: $color-principal;
       width: 230px;
       height: 70px;
@@ -73,7 +84,7 @@
       position: absolute;
       left: -200%;
       z-index: -1;
-     transition: all .3s ease-in;
+    transition: all .3s ease-in;
     }
   }
   
