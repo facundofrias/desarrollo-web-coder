@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.card:hover {
+.article:hover, .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -201,6 +201,23 @@ select:-webkit-autofill:focus {
 .main__description {
   font-size: 1.2em;
   text-align: justify;
+}
+
+.carousel-container {
+  max-width: 887px;
+}
+
+.carousel-indicators [data-bs-target] {
+  margin: 0 5px;
+  width: 14px;
+  height: 14px;
+  border-radius: 100%;
+}
+
+.carousel-control-prev-icon i,
+.carousel-control-next-icon i {
+  font-size: 2rem;
+  color: black;
 }
 
 /* 
@@ -417,7 +434,7 @@ select:-webkit-autofill:focus {
 
 .talleres-cursos {
   position: relative;
-  min-height: 254px;
+  min-height: 235px;
 }
 
 .data-section__ver-mas {
