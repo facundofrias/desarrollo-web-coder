@@ -491,10 +491,11 @@ select:-webkit-autofill:focus {
 .footer__item {
   padding: 2px;
 }
-.footer__span {
+.footer__h4 {
   margin: 0 2px;
 }
-.footer__link span, .footer__link i {
+.footer__link h4, .footer__link i {
+  display: inline-block;
   font-size: 1.14rem;
 }
 .footer__link {

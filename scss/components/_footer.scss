@@ -7,12 +7,13 @@
     padding: 2px;
   }
 
-  &__span {
+  &__h4 {
     margin: 0 2px;
   }
 
-  &__link span,
+  &__link h4,
   &__link i {
+    display: inline-block;
     font-size: 1.14rem;
   }
   
