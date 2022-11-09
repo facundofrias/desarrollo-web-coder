@@ -147,16 +147,27 @@
       &:nth-child(3){
         transition-delay: .4s;
       }
-      
-      // &:hover {
-      //   transition: none;
-      //   transition-delay: .0s;
-      //   color: red;
-      // }
     }
   }
 }
 
 
   /* Galería podcast */
-  
+
+  .gallery-container {
+    position: inherit;
+  }
+
+  .gallery-container [data-bs-target] {
+    width: 90px;
+    height: auto;
+    border-radius: 0;
+    
+    &:hover {
+    opacity: 1;
+    }
+
+    & img:hover {
+      @extend %sombra-1;
+    }
+  }

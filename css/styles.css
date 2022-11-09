@@ -1,5 +1,5 @@
 @charset "UTF-8";
-.article:hover, .card:hover {
+.article:hover, .gallery-container [data-bs-target] img:hover, .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
 }
 
@@ -327,6 +327,18 @@ a {
 }
 
 /* Galería podcast */
+.gallery-container {
+  position: inherit;
+}
+
+.gallery-container [data-bs-target] {
+  width: 90px;
+  height: auto;
+  border-radius: 0;
+}
+.gallery-container [data-bs-target]:hover {
+  opacity: 1;
+}
 .main__map {
   width: 100%;
   max-width: 400px;
