@@ -86,3 +86,33 @@
 .logo-link:hover {
   width: 110px;
 }
+
+/* Redes sociales */
+
+.podcast-container {
+  display: inline;
+}
+
+.podcast-container span {
+
+}
+
+.podcast-link {
+  margin: 0 5px;
+  font-size: 1.3rem;
+}
+
+.podcast-link:hover {
+  color: black;
+}
+
+.link-spotify:hover {
+  background-color: black;
+  border-radius: 100%;
+  color: #1CD05D;
+}
+
+
+.link-apple:hover {
+  color: #A348D6;  
+}
