@@ -17,6 +17,19 @@ footer {
   padding: 0 10px;
 }
 
+h1 {
+  clip: rect(0 0 0 0);
+  border: 0;
+  -webkit-clip-path: inset(50%);
+  clip-path: inset(50%);
+  display: block;
+  margin: 0 -1px -1px 0;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  z-index: -1;
+}
+
 ol,
 ul {
   list-style-type: none;
@@ -26,6 +39,10 @@ ul {
 a {
   text-decoration: none;
   color: black;
+}
+
+p {
+  text-align: justify;
 }
 
 .form-control {
@@ -121,9 +138,6 @@ a {
   position: sticky;
   top: 0px;
   z-index: 3;
-}
-.header__main-title {
-  display: none;
 }
 .header__main-page, .header__logo-img {
   max-width: 150px;
