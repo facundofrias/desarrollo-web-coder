@@ -8,7 +8,10 @@
 
 @import "./components/main";
 
-@import "./pages/index";
+@import "./components/carousel.scss";
+
+
+@import "./pages/index.scss";
 @import "./pages/comunidad";
 @import "./pages/contacto";
 @import "./pages/donaciones";

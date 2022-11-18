@@ -1,6 +1,10 @@
 @charset "UTF-8";
-.article:hover, .gallery-container [data-bs-target] img:hover, .card:hover {
+.article:hover, .card:hover {
   box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+
+.gallery-container [data-bs-target] img:hover {
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
 }
 
 /* Generales */
@@ -204,13 +208,17 @@ p {
   border-radius: 100%;
 }
 
-.carousel-control-prev-icon i,
-.carousel-control-next-icon i {
-  padding: 5px 10px;
+.fa-angle-left,
+.fa-angle-right {
+  padding: 2px 6px;
   font-size: 1.3rem;
   color: black;
   background-color: white;
   border-radius: 50%;
+}
+
+.indicadores [data-bs-target] {
+  border: 1px solid black;
 }
 
 /* 
